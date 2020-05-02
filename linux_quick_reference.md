@@ -1,12 +1,12 @@
 # Linux - quick reference
 
-List of common linux commands, operators and shortcuts with descriptions.
+List of common linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for myself. Some basic stuff is omitted in order to keep the document relatively short.
 
 ## Commands
 
 | command | usage | description | more info | tags |
 | --------| ----- |------------ | --------- | ---- |
-|whatis|whatis [options] <command\>|display one-line manual page descriptions||[discover]|
+|whatis|whatis <command\>|display one-line manual page descriptions||[discover]|
 
 ## Operators
 
@@ -18,12 +18,24 @@ List of common linux commands, operators and shortcuts with descriptions.
 
 | Shortcut | description |
 | ---------| ----------- |
-|ctrl + z|Suspend the current foreground process running in bash |
+|alt + b|go back one word|
+|alt + f|go forward one word|
+|ctrl + w|cut word before cursor|
+|ctrl + k|cut part of line after cursor|
+|ctrl + u|cut part of line before cursor|
+|ctrl + y|paste|
+|ctrl + r|recall command|
+|ctrl + z|suspend process|
+|ctrl + d|close bash shell|
+|ctrl + l|clear screen|
+|ctrl + s|stop all output to screen|
+|ctrl + q|resume output to screen|
+
 
 ## Files
 
 | file | description | more info |
-| -----| ----------- |
+| -----| ----------- | --------- |
 | /etc/services | file mapping services to port numbers ||
 
 
