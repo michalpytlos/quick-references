@@ -1,6 +1,6 @@
 # Linux - quick reference
 
-List of common linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for myself. Some basic stuff is omitted in order to keep the document relatively short.
+List of common linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for the author.
 
 ## Commands
 
@@ -8,7 +8,11 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 | --------| ----- |------------ | --------- | ---- |
 |whatis|whatis <command\>|display one-line manual page descriptions||[discover]|
 
-## Operators
+## Shell operators
+
+### Control operators
+
+### Redirection operators
 
 | Operator | description |
 | ---------| ----------- |
@@ -34,9 +38,14 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 
 ## Files
 
+To get information on the purpose of the typical default Linux directories run: `man hier`
+
 | file | description | more info |
 | -----| ----------- | --------- |
 | /etc/services | file mapping services to port numbers ||
+| /etc/passwd | user account info |https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/ |
+| /etc/group | group account info ||
+| /etc/sudoers | sudoers file - list of who can run what |https://www.sudo.ws/man/1.8.15/sudoers.man.html|
 
 
 ## Closer look at selected tools/commands
@@ -48,6 +57,8 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 3. https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
 4. https://en.wikibooks.org/wiki/Linux_Guide
 5. https://linuxize.com/tags/terminal/
-6. https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_04
+6. https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 7. https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
 8. https://learnxinyminutes.com/
+9. https://www.cyberciti.biz/
+10. https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
