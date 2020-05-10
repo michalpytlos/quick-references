@@ -98,9 +98,9 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |<|Pass input to command| command < in.txt |
 |>|Direct std output of command into file|command > out.txt|
 |2>|Direct std error of command into file| command > out.txt 2> error.txt|
-|>>|Direct std out of command into file. Append to the file.|command > out.txt|
-|&>|Direct both std out and std err of command into file|command &> out_err.txt|
-|&>>|Direct both std out and std err of command into file. Append to the file.|command &>> out_err.txt|
+|>>|Direct stdout of command into file. Append to the file.|command > out.txt|
+|&>|Direct both stdout and stderr of command into file|command &> out_err.txt|
+|&>>|Direct both stdout and stderr of command into file. Append to the file.|command &>> out_err.txt|
 |<<|here document. See https://bash.cyberciti.biz/guide/Here_documents for more info|||
 
 References:
@@ -109,7 +109,7 @@ References:
 
 
 ## Shortcuts
-
+### Command line
 | Shortcut | description |
 | ---------| ----------- |
 |alt + b|go back one word|
@@ -124,6 +124,22 @@ References:
 |ctrl + l|clear screen|
 |ctrl + s|stop all output to screen|
 |ctrl + q|resume output to screen|
+
+### Desktop
+| Shortcut | description |
+| ---------| ----------- |
+|super + d|Minimize all windows|
+|super + h|Minimize/hide current window|
+|super + tab|Switch applications|
+|super + <arrow_key>|Control size and position of application window|
+|ctrl + alt + up arrow|Move to the previous workspace|
+
+### Terminal window
+| Shortcut | description |
+| ---------| ----------- |
+|ctrl + alt + t|Open new terminal window|
+|shift + ctrl + t|Open new tab in terminal window|
+|alt + <tab_number>|Switch to tab <tab_number>|
 
 References:
 1. https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
