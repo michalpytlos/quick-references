@@ -2,6 +2,19 @@
 
 List of common linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for the author.
 
+## Table of contents
+- [Commands](#commands)
+- [Shell operators](#shell-operators)
+  * [Control operators](#control-operators)
+  * [Redirection operators](#redirection-operators)
+- [Shortcuts](#shortcuts)
+  * [Command line](#command-line)
+  * [Desktop](#desktop)
+  * [Terminal window](#terminal-window)
+- [Files](#files)
+- [Closer look at selected tools](#closer-look-at-selected-tools)
+- [Bibliography](#bibliography)
+
 
 ## Commands
 
@@ -158,7 +171,7 @@ To get information on the purpose of the typical default Linux directories run: 
 | /etc/sudoers | sudoers file - list of who can run what |https://www.sudo.ws/man/1.8.15/sudoers.man.html|
 
 
-## Closer look at selected tools/commands
+## Closer look at selected tools
 
 
 ## Bibliography
