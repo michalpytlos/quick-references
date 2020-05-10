@@ -5,9 +5,77 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 
 ## Commands
 
-| command | usage | description | more info | tags |
-| --------| ----- |------------ | --------- | ---- |
-|whatis|whatis <command\>|display one-line manual page descriptions||[discover]|
+| command | description | more info | tags |
+| ------- |------------ | --------- | ---- |
+|apt-cache|Find new packages|https://itsfoss.com/apt-get-linux-guide/|-|
+|apt-get|Install, upgrade and clean packages|https://itsfoss.com/apt-get-linux-guide/|-|
+|awk|Pattern scanning and text processing|https://linuxhandbook.com/awk-command-tutorial/|-|
+|bg|Run jobs in the background|https://www.cyberciti.biz/faq/unix-linux-bg-command-examples-usage-syntax/|-|
+|cat|Join several input files by sequentially sending their content to stdout|https://linuxhandbook.com/cat-command/|-|
+|chmod|Change mode of access|https://linuxhandbook.com/chmod-command/|-|
+|chown|Changes ownership of files and directories|https://www.computerhope.com/unix/uchown.htm|-|
+|crontab|Maintain crontab files for individual users|https://linuxhandbook.com/crontab/|-|
+|curl|Transfer data|https://linuxhandbook.com/curl-command-examples/|-|
+|df|Report file system disk space usage|https://linuxhandbook.com/df-command/|-|
+|diff|Analyze two files and print the lines that are different|https://www.computerhope.com/unix/udiff.htm|-|
+|dpkg|Debian package manager|https://www.cyberciti.biz/ref/apt-dpkg-ref.html|-|
+|du|Estimate file space usage|https://linuxhandbook.com/find-directory-size-du-command/|-|
+|export|Create environment variable|https://linuxhandbook.com/export-command/|-|
+|fg|Bring a background process to the foreground|https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/|-|
+|find|Search for files|https://www.geeksforgeeks.org/find-command-in-linux-with-examples/|-|
+|free|Display amount of free and used memory in the system|https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/|-|
+|gpg|Encryption and signing tool|https://www.techrepublic.com/blog/five-apps/protect-your-data-with-these-five-linux-encryption-tools/, https://guides.library.illinois.edu/data_encryption/gpgcheatsheet|-|
+|grep|Print lines matching a pattern|https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/|-|
+|hostname|-|-|-|
+|hostnamectl|-|-|-|
+|id|-|-|-|
+|ip|-|-|-|
+|ipconfig|-|-|-|
+|ipython|-|-|-|
+|jobs|-|-|-|
+|less|-|-|-|
+|ln|-|-|-|
+|lscpu|-|-|-|
+|lsof|-|-|-|
+|mc|-|-|-|
+|md5sum|-|-|-|
+|mkdir|-|-|-|
+|mount|-|-|-|
+|netstat|-|-|-|
+|nslookup|-|-|-|
+|ping|Send echo request to network server|https://linuxhandbook.com/ping-command/|-|
+|pdfunite|-|-|-|
+|ps|-|-|-|
+|rlwrap|-|-|-|
+|scp|-|-|-|
+|set|-|-|-|
+|shred|-|-|-|
+|sort|-|-|-|
+|source|Execute content of file in current shell|https://ss64.com/bash/source.html|-|
+|ssh|-|-|-|
+|ssh-copy-id|-|-|-|
+|ssh-keygen|-|-|-|
+|stat|-|-|-|
+|systemctl|-|-|-|
+|systemd|-|-|-|
+|tar|-|-|-|
+|taskset|-|-|-|
+|tee|-|-|-|
+|tmux|-|-|-|
+|top|-|-|-|
+|tree|-|-|-|
+|ufw|-|-|-|
+|uname|-|-|-|
+|usermod|-|-|-|
+|vim|-|-|-|
+|visudo|-|-|-|
+|wc|-|-|-|
+|wget|-|-|-|
+|whereis|-|-|-|
+|which|-|-|-|
+|xargs|-|-|-|
+|xxd|-|-|-|
+|zless|-|-|-|
 
 
 ## Shell operators
@@ -59,6 +127,7 @@ References:
 
 References:
 1. https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
+2. https://www.howtogeek.com/howto/41418/how-to-be-more-productive-in-ubuntu-using-keyboard-shortcuts/
 
 
 ## Files
@@ -89,3 +158,4 @@ To get information on the purpose of the typical default Linux directories run: 
 9. https://bash.cyberciti.biz/guide/Main_Page
 10. https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 11. http://linux-training.be/
+12. https://linuxhandbook.com/linux-commands/
