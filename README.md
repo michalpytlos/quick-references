@@ -39,38 +39,39 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |free|Display amount of free and used memory in the system|https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/|-|
 |gpg|Encryption and signing tool|https://www.techrepublic.com/blog/five-apps/protect-your-data-with-these-five-linux-encryption-tools/, https://guides.library.illinois.edu/data_encryption/gpgcheatsheet|-|
 |grep|Print lines matching a pattern|https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/|-|
-|hostname|-|-|-|
-|hostnamectl|-|-|-|
-|id|-|-|-|
-|ip|-|-|-|
-|ipconfig|-|-|-|
-|ipython|-|-|-|
-|jobs|-|-|-|
-|less|-|-|-|
-|ln|-|-|-|
-|lscpu|-|-|-|
-|lsof|-|-|-|
-|mc|-|-|-|
-|md5sum|-|-|-|
-|mkdir|-|-|-|
-|mount|-|-|-|
-|netstat|-|-|-|
-|nslookup|-|-|-|
+|hostnamectl|Control system hostname|man page|-|
+|id|Print real and effective IDs of users and groups|https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/|-|
+|ip|Configure IP addresses, network interfaces, and routing rules|https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/|-|
+|ipython|Python shell|https://ipython.readthedocs.io/en/stable/interactive/tutorial.html|-|
+|jobs|Show active jobs in shell|https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/|-|
+|less|View contents of a text file one screen at a time|https://www.howtogeek.com/444233/how-to-use-the-less-command-on-linux/|-|
+|ln|Make links between files|https://www.computerhope.com/unix/uln.htm, https://linuxgazette.net/105/pitcher.html|-|
+|lscpu|Display information about the CPU architecture|https://www.cyberciti.biz/faq/lscpu-command-find-out-cpu-architecture-information/|-|
+|lsof|List open files|https://linuxhandbook.com/lsof-command/, https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/|-|
+|mc|Directory browsing and file manipulation program|https://tldp.org/LDP/LG/issue23/wkndmech_dec97/mc_article.html|-|
+|md5sum|Verify data integrity using MD5|https://www.geeksforgeeks.org/md5sum-linux-command/|-|
+|netstat|Use ss instead|-|-|
+|nslookup|Query DNS records|https://linuxhandbook.com/nslookup-command/|-|
+|ntpd|Network Time Protocol (NTP) daemon|https://www.howtogeek.com/tips/how-to-sync-your-linux-server-time-with-network-time-servers-ntp/, https://www.systutorials.com/docs/linux/man/8-ntpd/|-|
+|ntpdate|Set the date and time via NTP|https://www.tecmint.com/synchronize-time-with-ntp-in-linux/|-|
+|pidof|Find the process ID of a running program|man page|-|
+|pinky|Print information on system users|https://www.howtogeek.com/427004/how-to-use-the-pinky-command-on-linux/||
 |ping|Send echo request to network server|https://linuxhandbook.com/ping-command/|-|
-|pdfunite|-|-|-|
-|ps|-|-|-|
-|rlwrap|-|-|-|
-|scp|-|-|-|
-|set|-|-|-|
-|shred|-|-|-|
-|sort|-|-|-|
+|pdfunite|Merge pdfs|man page|-|
+|printenv|List environment variables|https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/|-|
+|ps|Display information about running processes|https://linuxhandbook.com/ps-command/|-|
+|rlwrap|Intercept user input in order to provide readline's line editing, persistent history and completion|man page|-|
+|scp|Copy files over a secure, encrypted network connection|https://www.linuxtechi.com/scp-command-examples-in-linux/|-|
+|set|Set or unset values of shell options and positional parameters|https://bash.cyberciti.biz/guide/Set_command|-|
+|shred|Overwrite a file to hide its contents|https://www.computerhope.com/unix/shred.htm|-|
+|sort|Sort lines of text files|https://linuxhandbook.com/sort-command/|-|
 |source|Execute content of file in current shell|https://ss64.com/bash/source.html|-|
-|ssh|-|-|-|
-|ssh-copy-id|-|-|-|
-|ssh-keygen|-|-|-|
-|stat|-|-|-|
-|systemctl|-|-|-|
-|systemd|-|-|-|
+|ss|Investigate sockets|https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html|-|
+|ssh|SSH client|https://www.ssh.com/ssh/command/|-|
+|ssh-copy-id|Install SSH key on server as authorized key|https://www.ssh.com/ssh/copy-id|-|
+|ssh-keygen|Create new authentication key pairs for SSH|https://www.ssh.com/ssh/keygen/|-|
+|stat|Display detailed status of file or file system|https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/|-|
+|systemctl|Control systemd|https://tecadmin.net/tutorial/linux/linux-systemctl-command/|-|
 |tar|-|-|-|
 |taskset|-|-|-|
 |tee|-|-|-|
