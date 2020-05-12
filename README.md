@@ -12,7 +12,6 @@ List of common linux commands, operators and shortcuts with descriptions. The li
   * [Desktop](#desktop)
   * [Terminal window](#terminal-window)
 - [Files](#files)
-- [Closer look at selected tools](#closer-look-at-selected-tools)
 - [Bibliography](#bibliography)
 
 
@@ -35,11 +34,13 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |du|Estimate file space usage|https://linuxhandbook.com/find-directory-size-du-command/|-|
 |export|Create environment variable|https://linuxhandbook.com/export-command/|-|
 |fg|Bring a background process to the foreground|https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/|-|
+|file|Determine file type|https://www.computerhope.com/unix/ufile.htm|-|
 |find|Search for files|https://www.geeksforgeeks.org/find-command-in-linux-with-examples/|-|
 |free|Display amount of free and used memory in the system|https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/|-|
 |gpg|Encryption and signing tool|https://www.techrepublic.com/blog/five-apps/protect-your-data-with-these-five-linux-encryption-tools/, https://guides.library.illinois.edu/data_encryption/gpgcheatsheet|-|
 |grep|Print lines matching a pattern|https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/|-|
 |hostnamectl|Control system hostname|man page|-|
+|htop|Process viewer|https://linuxtogether.org/htop-command-explanation/|-|
 |id|Print real and effective IDs of users and groups|https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/|-|
 |ip|Configure IP addresses, network interfaces, and routing rules|https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/|-|
 |ipython|Python shell|https://ipython.readthedocs.io/en/stable/interactive/tutorial.html|-|
@@ -72,24 +73,25 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |ssh-keygen|Create new authentication key pairs for SSH|https://www.ssh.com/ssh/keygen/|-|
 |stat|Display detailed status of file or file system|https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/|-|
 |systemctl|Control systemd|https://tecadmin.net/tutorial/linux/linux-systemctl-command/|-|
-|tar|-|-|-|
-|taskset|-|-|-|
-|tee|-|-|-|
-|tmux|-|-|-|
-|top|-|-|-|
-|tree|-|-|-|
-|ufw|-|-|-|
-|uname|-|-|-|
-|usermod|-|-|-|
-|vim|-|-|-|
-|visudo|-|-|-|
-|wc|-|-|-|
-|wget|-|-|-|
-|whereis|-|-|-|
-|which|-|-|-|
-|xargs|-|-|-|
-|xxd|-|-|-|
-|zless|-|-|-|
+|tar|Archive and compress files|https://linuxhandbook.com/basic-tar-commands/|-|
+|taskset|Set or retrieve CPU affinity|https://www.howtoforge.com/linux-taskset-command/|-|
+|tee|Read from stdin and write to both stdout and one or more files|https://www.geeksforgeeks.org/tee-command-linux-example/|-|
+|tmux|Terminal multiplexer|https://tmuxcheatsheet.com/|-|
+|top|use htop instead|-|-|
+|tree|List contents of directories in a tree-like format|https://www.geeksforgeeks.org/tree-command-unixlinux/|-|
+|ufw|Manage netfilter firewall|https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/|-|
+|uname|Print system information|man page|-|
+|usermod|Modify user account|https://www.tecmint.com/usermod-command-examples/|-|
+|vim|Text editor|https://linuxhandbook.com/basic-vim-commands/, https://linuxhandbook.com/vim-cheat-sheet/|-|
+|visudo|Edit sudoers file|https://www.computerhope.com/unix/visudo.htm|-|
+|wc|Newline, word, byte and characters counts in files|https://www.tecmint.com/wc-command-examples/|-|
+|wget|Download files over network|https://www.computerhope.com/unix/wget.htm|-|
+|whatis|Display one-line manual page descriptions|https://www.computerhope.com/unix/whatis.htm|-|
+|whereis|Locate the binary, source, and manual page files for a command|man page|-|
+|which|Locate the executable file associated with the given command|man page|-|
+|xargs|Make commands accept standard input as arguments|https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/|-|
+|xxd|Make hex dump of file or stdin displaying ASCII equivalent of each byte|https://www.howtoforge.com/linux-xxd-command/, https://opensource.com/article/19/8/dig-binary-files-hexdump|-|
+|zless|View contents of compressed text file with less|man page|-|
 
 
 ## Shell operators
@@ -170,9 +172,6 @@ To get information on the purpose of the typical default Linux directories run: 
 | /etc/passwd | user account info |https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/ |
 | /etc/group | group account info ||
 | /etc/sudoers | sudoers file - list of who can run what |https://www.sudo.ws/man/1.8.15/sudoers.man.html|
-
-
-## Closer look at selected tools
 
 
 ## Bibliography
