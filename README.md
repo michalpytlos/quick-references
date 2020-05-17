@@ -1,6 +1,6 @@
 # Linux - quick reference
 
-List of common linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for the author.
+Linux commands, operators and shortcuts with descriptions. The list is not meant to be exhaustive but rather serve as a quick reference for the author.
 
 ## Table of contents
 - [Commands](#commands)
@@ -92,6 +92,7 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |xargs|Make commands accept standard input as arguments|https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/|-|
 |xxd|Make hex dump of file or stdin displaying ASCII equivalent of each byte|https://www.howtoforge.com/linux-xxd-command/, https://opensource.com/article/19/8/dig-binary-files-hexdump|-|
 |zless|View contents of compressed text file with less|man page|-|
+|zsh|Z shell|https://opensource.com/article/19/9/getting-started-zsh, https://opensource.com/article/18/9/tips-productivity-zsh|-|
 
 
 ## Shell operators
@@ -117,7 +118,7 @@ List of common linux commands, operators and shortcuts with descriptions. The li
 |>>|Direct stdout of command into file. Append to the file.|command > out.txt|
 |&>|Direct both stdout and stderr of command into file|command &> out_err.txt|
 |&>>|Direct both stdout and stderr of command into file. Append to the file.|command &>> out_err.txt|
-|<<|here document. See https://bash.cyberciti.biz/guide/Here_documents for more info|||
+|<<|here document| https://bash.cyberciti.biz/guide/Here_documents|
 
 References:
 1. http://linux-training.be/funhtml/ch13.html
@@ -177,14 +178,15 @@ To get information on the purpose of the typical default Linux directories run: 
 ## Bibliography
 
 1. https://explainshell.com/
-2. https://www.howtoforge.com/linux-commands/
-3. https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
-4. https://en.wikibooks.org/wiki/Linux_Guide
-5. https://linuxize.com/tags/terminal/
-6. https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
-7. https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
-8. https://learnxinyminutes.com/
-9. https://bash.cyberciti.biz/guide/Main_Page
-10. https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
-11. http://linux-training.be/
-12. https://linuxhandbook.com/linux-commands/
+2. https://www.howtogeek.com/author/davidmckay/
+3. https://bash.cyberciti.biz/guide/Main_Page
+4. http://linux-training.be/
+5. https://unix.stackexchange.com/
+6. https://learnxinyminutes.com/
+7. https://www.tecmint.com/linux-commands-cheat-sheet/
+8. https://www.howtoforge.com/linux-commands/
+9. https://linuxhandbook.com/linux-commands/
+10. https://linuxize.com/tags/terminal/
+11. https://pubs.opengroup.org/onlinepubs/9699919799/utilities/
+12. https://en.wikibooks.org/wiki/Linux_Guide
+13. https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
