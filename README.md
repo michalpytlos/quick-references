@@ -12,7 +12,8 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
   * [Desktop](#desktop)
   * [Terminal window](#terminal-window)
 - [Files](#files)
-- [Bibliography](#bibliography)
+- [git](#git)
+- [Useful links](#useful-links)
 
 
 ## Commands
@@ -32,6 +33,7 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |diff|Analyze two files and print the lines that are different|https://www.computerhope.com/unix/udiff.htm|-|
 |dpkg|Debian package manager|https://www.cyberciti.biz/ref/apt-dpkg-ref.html|-|
 |du|Estimate file space usage|https://linuxhandbook.com/find-directory-size-du-command/|-|
+|expand|Convert tabs to spaces|man page|-|
 |export|Create environment variable|https://linuxhandbook.com/export-command/|-|
 |fg|Bring a background process to the foreground|https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/|-|
 |file|Determine file type|https://www.computerhope.com/unix/ufile.htm|-|
@@ -120,7 +122,7 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |&>>|Direct both stdout and stderr of command into file. Append to the file.|command &>> out_err.txt|
 |<<|here document| https://bash.cyberciti.biz/guide/Here_documents|
 
-References:
+Bibliography:
 1. http://linux-training.be/funhtml/ch13.html
 2. https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 
@@ -158,7 +160,7 @@ References:
 |shift + ctrl + t|Open new tab in terminal window|
 |alt + <tab_number>|Switch to tab <tab_number>|
 
-References:
+Bibliography:
 1. https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
 2. https://www.howtogeek.com/howto/41418/how-to-be-more-productive-in-ubuntu-using-keyboard-shortcuts/
 
@@ -175,7 +177,24 @@ To get information on the purpose of the typical default Linux directories run: 
 | /etc/sudoers | sudoers file - list of who can run what |https://www.sudo.ws/man/1.8.15/sudoers.man.html|
 
 
-## Bibliography
+## git
+
+Commands:
+1. https://ndpsoftware.com/git-cheatsheet.html
+2. https://www.atlassian.com/git
+3. https://git-scm.com/docs
+4. https://learnxinyminutes.com/docs/git/
+
+Tutorials:
+1. https://learngitbranching.js.org/
+2. https://gitimmersion.com/lab_01.html
+
+How git works:
+1. [Git for ages 4 and up - video](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
+2. [Pro Git - book](https://www.git-scm.com/book/en/v2)
+
+
+## Useful links
 
 1. https://explainshell.com/
 2. https://www.howtogeek.com/author/davidmckay/
