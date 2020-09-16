@@ -24,6 +24,7 @@
 | ------------| ----------- |
 |blame -L n,m <file\>|Show what revision and author last modified lines n to m of file|
 |branch -f <branch\> <commit\>|Move branch head to commit|
+|branch --merged [<commit\>]|List branches whose tips are reachable from commit|
 |checkout -- <file\>|Discard unstaged changes to file|
 |checkout -b <new_branch\> |Create new branch AND check it out|
 |push <remote\> <source\>:<destination\>|Precisely define what and where to push using refspec|
