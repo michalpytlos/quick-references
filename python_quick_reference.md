@@ -1,22 +1,21 @@
 # Python - quick reference
 
-## IPython 
+## Selected tools
 
-### Selected commands
-| command | description |
-| ------- |------------ |
-|<object\>?|print information about object|
-|<object\>??|as above + source code|
-|<object\>. + tab|view object's attributes|
-|%hist|print input history|
-|!<shell_command\>|run shell command|
-|<variable\> = !<shell_command>|assign result of shell command to Python variable|
-|!<shell_command\> {<variable_or_expression\>}|pass value of Python's variable or expression to shell command|
-|<line\>;|suppress output from line|
-
-### More info
-1. [Tutorial](https://ipython.readthedocs.io/en/stable/interactive/index.html)
-2. [Magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+| tool | description | refernce |
+| ---- |------------ | -------- |
+|IPython|Interactive shell for Python|[docs](https://ipython.readthedocs.io/en/stable/interactive/index.html), [Magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)|
+|pipx|Install and run Python applications in isolated environments|[docs](https://pipxproject.github.io/pipx/)|
+|Pipenv|Packaging tool|[docs](https://docs.pipenv.org/), [tutorial](https://realpython.com/pipenv-guide/)|
+|Black|Code formatter|[docs](https://black.readthedocs.io/en/stable/), [github](https://github.com/psf/black)|
+|isort|Sort imports|[docs](https://pycqa.github.io/isort/)|
+|Flake8|Code linter|[man page](https://flake8.pycqa.org/en/latest/manpage.html), [error codes](https://flake8.pycqa.org/en/latest/user/error-codes.html)|
+|mypy|Static type checker|[project page](http://mypy-lang.org/)|
+|pytest|Testing framework|[docs](https://docs.pytest.org/en/stable/), [tutorial](https://realpython.com/pytest-python-testing/)|
+|pytest-cov|Integrate [coverage.py](https://coverage.readthedocs.io/) into pytest|[docs](https://pytest-cov.readthedocs.io/en/latest/readme.html)|
+|tox|Testing wrapper|[docs](https://tox.readthedocs.io/en/latest/), [tutorial](https://waprin.io/2015/05/21/introducing-tox.html)|
+|pre-commit|Manage pre-commit hooks|[docs](https://pre-commit.com/#intro), [supported hooks](https://pre-commit.com/hooks.html)|
+|Cookiecutter|Create projects from project templates|[github](https://github.com/cookiecutter/cookiecutter), [template for Python package](https://github.com/audreyfeldroy/cookiecutter-pypackage)|
 
 
 ## Useful links
@@ -31,4 +30,7 @@
 9. [Common Python Data Structures (Guide)](https://realpython.com/python-data-structures/)
 10. [List of lists of interview questions](https://github.com/MaximAbramchuck/awesome-interview-questions#python)
 11. [Python videos](https://pyvideo.org/events.html)
+12. [How to set up Python project](https://sourcery.ai/blog/python-best-practices/)
+13. [Python project checklist](http://michal.karzynski.pl/blog/2019/05/26/python-project-maturity-checklist/)
+14. [Packaging Python projects](https://packaging.python.org/tutorials/packaging-projects/)
 
