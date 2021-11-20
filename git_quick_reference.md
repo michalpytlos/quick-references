@@ -15,6 +15,7 @@
 |rebase <new_base> [<branch\>]|Change base of branch from one commit to another|[atlassian.com](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)|
 |reflog|Manage information recorded in reference logs|[git-scm.com](https://git-scm.com/docs/git-reflog)|
 |reset <older_commit\>|Move branch head backwards in time to older commit|[atlassian.com](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|
+|restore|Unstage or discard uncommitted local changes|[git-scm](https://git-scm.com/docs/git#_reset_restore_and_revert), [git-tower](https://www.git-tower.com/learn/git/commands/git-restore)|
 |revert <bad_commit\>|Invert changes introduced by commit and append new commit with resulting inverse content|git help|
 |stash| Save local modifications away and revert working directory to match HEAD commit|[atlassian.com](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)|
 |tag <tag_name\> <commit\>|Add tag to commit|git help|
@@ -28,6 +29,7 @@
 |branch --merged [<commit\>]|List branches whose tips are reachable from commit|
 |checkout -- <file\>|Discard unstaged changes to file|
 |checkout -b <new_branch\> |Create new branch AND check it out|
+|commit --amend --reset-author --no-edit||
 |diff --stat <commit1\> <commit2\>|Show which files changed between commits (in diffstat form)|
 |push <remote\> <source\>:<destination\>|Precisely define what and where to push using refspec|
 |push <remote\> :<remote_branch\>|Delete branch on remote using refspec with empty source|
