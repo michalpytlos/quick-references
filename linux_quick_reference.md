@@ -43,6 +43,7 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |hostnamectl|Control system hostname|man page|-|
 |htop|Process viewer|https://linuxtogether.org/htop-command-explanation/|-|
 |id|Print real and effective IDs of users and groups|https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/|-|
+|img2pdf|Convert raster images to PDF|https://pypi.org/project/img2pdf/||
 |ip|Configure IP addresses, network interfaces, and routing rules|https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/|-|
 |ipython|Python shell|https://ipython.readthedocs.io/en/stable/interactive/tutorial.html|-|
 |jobs|Show active jobs in shell|https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/|-|
@@ -59,9 +60,11 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |pidof|Find the process ID of a running program|man page|-|
 |pinky|Print information on system users|https://www.howtogeek.com/427004/how-to-use-the-pinky-command-on-linux/||
 |ping|Send echo request to network server|https://linuxhandbook.com/ping-command/|-|
-|pdfunite|Merge pdfs|man page|-|
 |printenv|List environment variables|https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/|-|
 |ps|Display information about running processes|https://linuxhandbook.com/ps-command/|-|
+|qpdf|Transform PDF files|https://qpdf.readthedocs.io/en/latest/cli.html||
+|qpdf|qpdf --empty --pages *.pdf -- out.pdf|Merge PDF files|
+|qpdf|qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf|Encrypt PDF file|
 |rlwrap|Intercept user input in order to provide readline's line editing, persistent history and completion|man page|-|
 |scp|Copy files over a secure, encrypted network connection|https://www.linuxtechi.com/scp-command-examples-in-linux/|-|
 |set|Set or unset values of shell options and positional parameters|https://bash.cyberciti.biz/guide/Set_command|-|
