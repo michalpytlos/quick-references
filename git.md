@@ -30,6 +30,8 @@
 |checkout -- <file\>|Discard unstaged changes to file|
 |checkout -b <new_branch\> |Create new branch AND check it out|
 |commit --amend --reset-author --no-edit||
+|config --list | show all variables in config file |
+|config <variable\> "<value\>"| set variable in config file |
 |diff --stat <commit1\> <commit2\>|Show which files changed between commits (in diffstat form)|
 |push <remote\> <source\>:<destination\>|Precisely define what and where to push using refspec|
 |push <remote\> :<remote_branch\>|Delete branch on remote using refspec with empty source|
