@@ -6,6 +6,7 @@
 | w | move to beginning of next word |
 | e | move to end of current/next word |
 | b | move to beginning of current/previous word |
+| % | move to matching char. Default matchpairs: (), [], {} |
 | `d ( d \| w \|  iw \| e \| b )` | delete/cut |
 | dd | cut current line |
 | dNd | cut N lines|
@@ -23,12 +24,17 @@
 | p | paste |
 | "xp | paste content of register x |
 | "+p | paste content of system clipboard |
+| "+y | yank to system clipboard |
 | >> | indent line |
 | >N> | indent N lines |
 | << | unindent line
-| N% | go to N percent of file |
+| gg | go to first line of document |
+| G | go to last line of document |
 | Ngg | go to line N |
 | :N | go to line N |
+| N% | go to N percent of file |
+| ctrl + u | move cursor and screen up 1/2 page |
+| ctrl + d | move cursor and screen down 1/2 page |
 | u | undo last operation |
 | . | repeat last command |
 
@@ -42,8 +48,32 @@
 | < | unindent |
 | u | make lowercase |
 | U | make uppercase | 
+| aw | mark word |
+
+## Insert mode
+| Command | description |
+| ------- | ----------- |
+| i | insert before cursor |
+| I | insert at beginning of line |
+| a | append/insert after cursor |
+| A | append/insert at end of line |
+| o | open new line below current line |
+| O | open new line above current line |
+
+## Search and replace
+| Command | description |
+| ------- | ----------- |
+| /pattern | search for pattern |
+| ?pattern | search backward for pattern |
+| n | next/repeat search in same direction |
+| N | repeat search in opposite direction |
+| :%s/old/new/g | replace all old with new |
+| :%s/old/new/gc | replace all old with new with confirmations |
 
 ## Command mode
 | Command | description |
 | ------- | ----------- |
 | :reg | show content of all registers |
+
+## References
+1. https://vim.rtorr.com/
