@@ -1,6 +1,14 @@
 # Docker - quick reference
 
-## Selected CLI commands
+## Table of contents
+- [Docker CLI](#docker-cli)
+  * [System](#system)
+  * [Containers](#containers)
+  * [Images](#images)
+  * [Volumes](#volumes)
+- [Docker compose](#docker-compose)
+
+## Docker CLI
 
 ### System
 `docker system COMMAND`
@@ -8,7 +16,7 @@
 | Command | description |
 | ------- | ----------- |
 | df | show docker disk usage |
-| events | get real time events from |
+| events | get real time events from server |
 | info | display system-wide info |
 | prune | remove unused data |
 
@@ -77,4 +85,4 @@ Other commands: `inspect | ls | prune | rm | save | load`
 ### Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
 
-## docker-compose CLI commands
+## Docker compose
