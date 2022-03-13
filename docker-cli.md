@@ -1,16 +1,14 @@
 # Docker - quick reference
 
 ## Table of contents
-- [Docker CLI](#docker-cli)
-  * [System](#system)
-  * [Containers](#containers)
-  * [Images](#images)
-  * [Volumes](#volumes)
-- [Docker compose](#docker-compose)
+- [System](#system)
+- [Containers](#containers)
+  * [Interact and inspect](#interact-and-inspect)
+  * [Manage](#manage)
+- [Images](#images)
+- [Volumes](#volumes)
 
-## Docker CLI
-
-### System
+## System
 `docker system COMMAND`
 
 | Command | description |
@@ -20,10 +18,10 @@
 | info | display system-wide info |
 | prune | remove unused data |
 
-### Containers
+## Containers
 `docker container COMMAND`
 
-#### Interact and inspect
+### Interact and inspect
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
@@ -45,7 +43,7 @@
 | stats | display live stream of container resource usage stats ||
 | top | display running processes of container ||
 
-#### Manage
+### Manage
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
@@ -66,7 +64,7 @@
 
 Other commands: `ls | prune | commit | pause | unpause | rename | restart | wait | update`
 
-### Images
+## Images
 `docker image COMMAND`
 
 | Command | description | usage |
@@ -82,7 +80,5 @@ Other commands: `ls | prune | commit | pause | unpause | rename | restart | wait
 
 Other commands: `inspect | ls | prune | rm | save | load`
 
-### Volumes
+## Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
-
-## Docker compose
