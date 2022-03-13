@@ -3,10 +3,9 @@
 ## Table of contents
 - [System](#system)
 - [Containers](#containers)
-  * [Interact and inspect](#interact-and-inspect)
-  * [Manage](#manage)
 - [Images](#images)
 - [Volumes](#volumes)
+- [Misc](#misc)
 
 ## System
 `docker system COMMAND`
@@ -20,8 +19,6 @@
 
 ## Containers
 `docker container COMMAND`
-
-### Interact and inspect
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
@@ -44,26 +41,9 @@
 | stats | display live stream of container resource usage stats |`docker stats [OPTIONS] [CONTAINER...]`|
 | top | display running processes of container |`docker top CONTAINER [ps OPTIONS]`|
 
-### Manage
+Manage commands: `create | rm | start | stop | kill | run | restart | pause | unpause | update | rename`
 
-| Command | description | usage |
-| ------- | ----------- | ----- |
-| create | create new container and prepare it to run specified command | `docker create [OPTIONS] IMAGE [COMMAND] [ARG...]` |
-|| attach to stdin, stdout or stdout | `--attach ( STDIN \| STDOUT \| STDERR )` |
-|| set env vars | `-e, --env` |
-|| read in file of env vars | `--env-file` |
-|| assign name to container | `--name` |
-| rm | remove one or more containers ||
-|| remove anonymous volumes associated with container | `-v, --volumes` |
-| start | start one or more stopped containers |`docker start [OPTIONS] CONTAINER [CONTAINER...]`|
-|| attach stdout/stderr and forward signals | `-a, --attach` |
-|| attach container's stdin | `-i, --interactive` |
-| stop | stop (SIGTERM) one or more running containers |`docker stop [OPTIONS] CONTAINER [CONTAINER...]`|
-| kill | kill (SIGKILL) one or more running containers ||
-| run | create + start | `docker run [OPTIONS] IMAGE [COMMAND] [ARG...]` |
-|| run container in background | `-d, --detach` |
-
-Other commands: `ls | prune | commit | pause | unpause | rename | restart | wait | update`
+Other commands: `ls | prune | commit | wait`
 
 ## Images
 `docker image COMMAND`
@@ -83,3 +63,8 @@ Other commands: `inspect | ls | prune | rm | save | load`
 
 ## Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
+
+
+## Misc
+
+- [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
