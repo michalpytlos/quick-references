@@ -63,8 +63,8 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |printenv|List environment variables|https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/|
 |ps|Display information about running processes|https://linuxhandbook.com/ps-command/|
 |qpdf|Transform PDF files|https://qpdf.readthedocs.io/en/latest/cli.html|
-|qpdf|qpdf --empty --pages *.pdf -- out.pdf|Merge PDF files|
-|qpdf|qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf|Encrypt PDF file|
+||`qpdf --empty --pages *.pdf -- out.pdf`|Merge PDF files|
+||`qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf`|Encrypt PDF file|
 |rlwrap|Intercept user input in order to provide readline's line editing, persistent history and completion|man page|
 |scp|Copy files over a secure, encrypted network connection|https://www.linuxtechi.com/scp-command-examples-in-linux/|
 |set|Set or unset values of shell options and positional parameters|https://bash.cyberciti.biz/guide/Set_command|
@@ -73,6 +73,7 @@ Linux commands, operators and shortcuts with descriptions. The list is not meant
 |source|Execute content of file in current shell|https://ss64.com/bash/source.html|
 |ss|Investigate sockets|https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html|
 |ssh|SSH client|https://www.ssh.com/ssh/command/|
+||`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|[Local port forwarding](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding)|
 |ssh-copy-id|Install SSH key on server as authorized key|https://www.ssh.com/ssh/copy-id|
 |ssh-keygen|Create new authentication key pairs for SSH|https://www.ssh.com/ssh/keygen/|
 |stat|Display detailed status of file or file system|https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/|
