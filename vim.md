@@ -36,18 +36,19 @@
 | ctrl + u | move cursor and screen up 1/2 page |
 | ctrl + d | move cursor and screen down 1/2 page |
 | u | undo last operation |
+| ctrl + r | redo changes which were undone |
 | . | repeat last command |
 
 ## Visual mode
 | Command | description |
 | ------- | ----------- |
 | d | cut |
-| c | change | 
+| c | change |
 | y | yank |
 | > | indent |
 | < | unindent |
 | u | make lowercase |
-| U | make uppercase | 
+| U | make uppercase |
 | aw | mark word |
 
 ## Insert mode
