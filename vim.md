@@ -21,7 +21,8 @@
 | Y | yank to end of line |
 | x | cut char |
 | r | replace char |
-| p | paste |
+| p | paste after cursor |
+| P | paste before cursor |
 | "xp | paste content of register x |
 | "+p | paste content of system clipboard |
 | "+y | yank to system clipboard |
@@ -35,7 +36,8 @@
 | N% | go to N percent of file |
 | ctrl + u | move cursor and screen up 1/2 page |
 | ctrl + d | move cursor and screen down 1/2 page |
-| u | undo last operation |
+| u | undo last change |
+| U | undo last changed line |
 | ctrl + r | redo changes which were undone |
 | . | repeat last command |
 
