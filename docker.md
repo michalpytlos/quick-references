@@ -1,12 +1,18 @@
-# Docker CLI - quick reference
+# Docker - quick reference
 
 ## Table of contents
-- [System](#system)
-- [Containers](#containers)
-- [Images](#images)
-- [Volumes](#volumes)
-- [Misc](#misc)
+- [Docker CLI](#docker-cli)
+    - [System](#system)
+    - [Containers](#containers)
+    - [Images](#images)
+    - [Volumes](#volumes)
+    - [Misc](#misc)
+- [Docker Compose](#docker-compose)
+    - [Compose CLI](#compose-cli)
+    - [Useful links](#useful-links)
 
+
+# Docker CLI
 ## System
 `docker system COMMAND`
 
@@ -64,7 +70,33 @@ Other commands: `inspect | ls | prune | rm | save | load`
 ## Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
 
-
 ## Misc
-
 - [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+
+# Docker Compose
+
+## Compose CLI
+
+| Command | description | usage |
+| ------- | ----------- | ----- |
+| config | validate and view compose file ||
+| build | build or rebuild services | `build [options] [--build-arg key=val...] [--] [SERVICE...]` |
+|| do not use cache when bulding image | `--no-cache` |
+| up | build, create, start and attach to containers for service|`up [options] [--scale SERVICE=NUM...] [--] [SERVICE...]`|
+||detached mode|`-d, --detach`|
+||recreate containers even if their conf and image haven't changed|`--recreate`|
+||don't start services after creating them|`--no-start`|
+||build images before starting containers|`--build`|
+| down | stop containers and remove containers and networks (optionally also rm volumes and images) created by `up` |`down [options]`|
+||remove images|`--rmi [all \| local]`|
+||remove named volumes in compose and anonymous volumes attached to containers|`-v, --volumes`|
+| images |list images used by created containers||
+| events |receive real time events from containers||
+
+Other manage commands: `rm | start | restart | stop | kill | pause | unpause`
+
+Other commands: ` exec | logs | port | ps | run | top | pull | push`
+
+## Useful links
+- [Compose file reference](https://docs.docker.com/compose/compose-file/compose-file-v3/)
+- [Multiple compose files](https://docs.docker.com/compose/extends/#multiple-compose-files)

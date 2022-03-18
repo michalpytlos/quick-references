@@ -4,4 +4,4 @@
 2. [Git](git.md)
 3. [Python](python.md)
 4. [Vim](vim.md)
-5. [Docker CLI](docker-cli.md)
+5. [Docker](docker.md)
