@@ -16,12 +16,21 @@
 ## System
 `docker system COMMAND`
 
-| Command | description |
-| ------- | ----------- |
-| df | show docker disk usage |
-| events | get real time events from server |
-| info | display system-wide info |
-| prune | remove unused data |
+| Command | description | usage |
+| ------- | ----------- | ----- |
+| df | show docker disk usage | `docker sysytem df [OPTIONS]` |
+||show detailed info on space usage|`-v, --verbose`|
+| events | get real time events from server |`docker events [OPTIONS]`|
+||filter output|`-f, --filter  FILTER*`|
+||show events created since timestamp|`--since TIME_STRING*`|
+||stream events until timestamp|`--until TIME_STRING*`|
+| info | display system-wide info |`docker info`|
+| prune | Remove unused containers, networks, images and, optionally, volumes |`docker system prune [OPTIONS]`|
+||Remove all unused images not just dangling ones|`-a, --all`|
+||Limit scope of prune|`--filter FILTER`|
+||Also prune volumes|`--volumes`|
+
+\* See [docs](https://docs.docker.com/engine/reference/commandline/system_events/#limiting-filtering-and-formatting-the-output) for more info on filtering and time-string formats.
 
 ## Containers
 `docker container COMMAND`
