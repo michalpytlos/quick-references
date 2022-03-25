@@ -1,11 +1,12 @@
 # Python - quick reference
 
 ## Table of contents
-- [Tooling](#tooling)
+- [Tooling](#overview-of-tooling)
 - [Poetry](#poetry)
+- [Alembic](#alembic)
 - [Useful links](#useful-links)
 
-## Tooling
+## Overview of tooling
 
 | tool | description | reference |
 | ---- |------------ | -------- |
@@ -58,6 +59,23 @@ Selected commands
 ||Only update lock file|`--lock`|
 
 Reference: [CLI docs](https://python-poetry.org/docs/cli/)
+
+## Alembic
+
+| Command | description | usage |
+| ------- | ----------- | ----- |
+|current|Display current revision for database|`alembic current`|
+|downgrade|Revert to previous revision|`alembic downgrade [OPTIONS] REVISION`|
+|heads|Show current available heads|`alembic heads [OPTIONS]`|
+|history|List changeset scripts in chronological order|`alembic history [OPTIONS]`|
+|init|Initialize new scripts dir|`alembic init [OPTIONS] DIRECTORY`|
+|revision|Create new revision file|`alembic revision [OPTIONS]`|
+||Add message to use with revision|`-m MESSAGE`|
+||Populate revision script with candidate migration operations|`--autogenerate`|
+|show|Show revisions denoted by given symbol|`alembic show [OPTIONS] SHORT_REV_HASH`|
+|upgrade|Upgrade to later revision|`alembic upgrade [OPTIONS] REVISION`|
+
+Other commands: `branches | edit | ensure_version | list_templates | merge | stamp`
 
 ## Useful links
 1. [The Python Standard Library](https://docs.python.org/3/library/index.html)
