@@ -1,5 +1,13 @@
 # Vim - quick reference
 
+## Contents
+- [Normal mode](#normal-mode)
+- [Visual mode](#visual-mode)
+- [Insert mode](#insert-mode)
+- [Search and replace](#search-and-replace)
+- [Command mode](#command-mode)
+- [Useful links](#useful-links)
+
 ## Normal mode
 | Command | description |
 | ------- | ----------- |
