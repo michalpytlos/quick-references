@@ -78,5 +78,6 @@
 | ------- | ----------- |
 | :reg | show content of all registers |
 
-## References
-1. https://vim.rtorr.com/
+## Useful links
+1. [Extensive Vim cheat sheet](https://vim.rtorr.com/)
+2. [Vim setup for Python development](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
