@@ -1,15 +1,13 @@
 # Docker - quick reference
 
-## Table of contents
+## Contents
 - [Docker CLI](#docker-cli)
     - [System](#system)
     - [Containers](#containers)
     - [Images](#images)
     - [Volumes](#volumes)
-    - [Misc](#misc)
-- [Docker Compose](#docker-compose)
-    - [Compose CLI](#compose-cli)
-    - [Useful links](#useful-links)
+- [Compose CLI](#compose-cli)
+- [Useful links](#useful-links)
 
 
 # Docker CLI
@@ -79,12 +77,7 @@ Other commands: `inspect | ls | prune | rm | save | load`
 ## Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
 
-## Misc
-- [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
-
-# Docker Compose
-
-## Compose CLI
+# Compose CLI
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
@@ -106,6 +99,7 @@ Other manage commands: `rm | start | restart | stop | kill | pause | unpause`
 
 Other commands: ` exec | logs | port | ps | run | top | pull | push`
 
-## Useful links
+# Useful links
+- [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
 - [Compose file reference](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 - [Multiple compose files](https://docs.docker.com/compose/extends/#multiple-compose-files)
