@@ -15,17 +15,17 @@
 | e | move to end of current/next word |
 | b | move to beginning of current/previous word |
 | % | move to matching char. Default matchpairs: (), [], {} |
-| `d ( d \| w \|  iw \| e \| b )` | delete/cut |
+| `d ( d \| w \| e \| b \| iw )` | delete/cut |
 | dd | cut current line |
 | dNd | cut N lines|
-| dw | cut to beginning of next word |
+| dw | cut to beginning of next word (to right of cursor)|
+| de | cut to end of current word (to right of cursor)|
+| db | cut to beginning of current/previous word (to left of cursor)|
 | diw | cut entire word |
-| de | cut to end of current word |
-| db | cut from before cursor to beginning of word |
 | D | cut to end of line |
-| `c ( c \| w \| iw \| e \| b )` | change/replace |
+| `c ( c \| w \| e \| b \| iw )` | change/replace |
 | C | change to end of line |
-| `y ( y \| w \| iw \| e \| b )` | yank/copy |
+| `y ( y \| w \| e \| b \| iw )` | yank/copy |
 | Y | yank to end of line |
 | x | cut char |
 | r | replace char |
@@ -42,11 +42,12 @@
 | Ngg | go to line N |
 | :N | go to line N |
 | N% | go to N percent of file |
-| ctrl + u | move cursor and screen up 1/2 page |
-| ctrl + d | move cursor and screen down 1/2 page |
+| ggVG | select all |
+| Ctrl + u | move cursor and screen up 1/2 page |
+| Ctrl + d | move cursor and screen down 1/2 page |
 | u | undo last change |
 | U | undo last changed line |
-| ctrl + r | redo changes which were undone |
+| Ctrl + r | redo changes which were undone |
 | . | repeat last command |
 
 ## Visual mode
@@ -70,6 +71,12 @@
 | A | append/insert at end of line |
 | o | open new line below current line |
 | O | open new line above current line |
+| Ctrl + o | go to normal mode for just one command |
+| Ctrl + Right Arrow | move to beginning of next word |
+| Ctrl + Left Arrow | move to beginning of current/previous word |
+| Ctrl + w | delete to beginning of current/previous word (to left of cursor) |
+| Ctrl + u | delete everything to left of cursor |
+| Ctrl + o D | delete everything to right of cursor |
 
 ## Search and replace
 | Command | description |
