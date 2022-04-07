@@ -5,3 +5,4 @@
 3. [Python](python.md)
 4. [Vim](vim.md)
 5. [Docker](docker.md)
+6. [Miscellaneous](misc.md)
