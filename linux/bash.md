@@ -1,5 +1,12 @@
 # Bash - quick reference
 
+## Contents
+
+1. [Control operators](#control-operators)
+1. [Redirection operators](#redirection-operators)
+1. [Shortcuts](#shortcuts)
+1. [Useful links](#useful-links)
+
 ## Control operators
 
 | Operator | description |

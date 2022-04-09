@@ -1,5 +1,10 @@
 # Linux commands - quick reference
 
+## Contents
+
+1. [Overview of commands](#overview-of-commands)
+1. [Useful links](#useful-links)
+
 ## Overview of commands
 
 | command | description | more info |
