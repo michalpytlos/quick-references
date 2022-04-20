@@ -42,7 +42,8 @@
 || set env vars | `-e, --env` |
 || keep stdin opened | `-i, --interactive` |
 || allocate pseudo-TTY | `-t, --tty` |
-| inspect | display detailed info on one or more containers |`docker container inspect [OPTIONS] CONTAINER [CONTAINER...]`|
+| inspect | display detailed info on one or more containers |`docker inspect [OPTIONS] CONTAINER [CONTAINER...]`|
+|| check if container is running |`docker inspect -f {{.State.Running}} CONTAINER`|
 | logs | fetch logs of container |`docker logs [OPTIONS] CONTAINER`|
 || follow log output | `-f, --follow` |
 || show n lines from tail | `-n, --tail` |

@@ -49,6 +49,6 @@
 |ctrl + q|resume output to screen|
 
 ## Useful links
-
+1. [Bash How-to by SS64](https://ss64.com/bash/syntax.html)
 1. [Linux Bash Shell Scripting Tutorial](https://bash.cyberciti.biz/guide/Main_Page)
-2. [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+1. [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)

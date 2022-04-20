@@ -35,7 +35,6 @@
 |id|Print real and effective IDs of users and groups|https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/|
 |img2pdf|Convert raster images to PDF|https://pypi.org/project/img2pdf/|
 |ip|Configure IP addresses, network interfaces, and routing rules|https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/|
-|ipython|Python shell|https://ipython.readthedocs.io/en/stable/interactive/tutorial.html|
 |jobs|Show active jobs in shell|https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/|
 |less|View contents of a text file one screen at a time|https://www.howtogeek.com/444233/how-to-use-the-less-command-on-linux/|
 |ln|Make links between files|https://www.computerhope.com/unix/uln.htm, https://linuxgazette.net/105/pitcher.html|
@@ -90,10 +89,8 @@
 |zsh|Z shell|https://opensource.com/article/19/9/getting-started-zsh, https://opensource.com/article/18/9/tips-productivity-zsh|
 
 ## Useful links
-
+1. [Index of Linux commands by SS64](https://ss64.com/bash/)
 1. [Explain Shell](https://explainshell.com/) - quickly lookup syntax and details of shell commands
 1. [Collection of articles on Linux by Davic McKay](https://www.howtogeek.com/author/davidmckay/)
-1. [Overview of Linux commands by TecMint](https://www.tecmint.com/linux-commands-cheat-sheet/)
-1. [Overview of Linux commands by HowtoForge](https://www.howtoforge.com/linux-commands/)
 1. [Essential Linux commands by Linux Handbook](https://linuxhandbook.com/linux-commands/)
 1. [Linux utilities - index (The Open Group)](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/)
