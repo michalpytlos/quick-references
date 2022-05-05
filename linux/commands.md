@@ -2,12 +2,37 @@
 
 ## Contents
 
-1. [Overview of commands](#overview-of-commands)
+1. [Searching](#searching)
+1. [Other commands A-Z](#Other-commands)
 1. [Useful links](#useful-links)
 
-## Overview of commands
+## Searching
+| command | description | usage |
+| ------- |------------ | ----- |
+|[grep](https://ss64.com/bash/grep.html)|Print lines matching a pattern|`grep [OPTIONS] 'PATTERN' [FILE...]`|
+||print only count of selected lines per file| `-c, --count` |
+||| `-i, --ignore-case` |
+||print only names of files with selected lines| `-l, --files-with-matches` |
+||stop after NUM selected lines|`-m NUM`|
+||| `-n, --line-number` |
+||show only parts of lines that match| `-o, --only-matching` |
+||| `-r, --recursive` |
+||match only whole words| `-w, --word-regexp` |
+||select non-matching lines| `-v, --invert-match` |
+||print NUM lines of trailing context| `-A NUM` |
+||print NUM lines of leading context| `-B NUM` |
+||print NUM lines of output context| `-C NUM` |
+||PATTERNS are extended regexp| `-E, --extended-regexp` |
+|[find](https://ss64.com/bash/find.html)|Search for files|`find [-H] [-L] [-P] [PATH...] [EXPRESSION]`|
+||Search by filename using glob pattern|`find PATH -name 'PATTERN'`|
 
-| command | description | more info |
+Useful links:
+* [Introduction to grep with examples](https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/)
+* [Regular expressions in grep](https://linuxize.com/post/regular-expressions-in-grep/)
+
+## Other commands
+
+| command | description | usage |
 | ------- |------------ | --------- |
 |apt-cache|Find new packages|https://itsfoss.com/apt-get-linux-guide/|
 |apt-get|Install, upgrade and clean packages|https://itsfoss.com/apt-get-linux-guide/|
@@ -26,10 +51,8 @@
 |export|Create environment variable|https://linuxhandbook.com/export-command/|
 |fg|Bring a background process to the foreground|https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/|
 |file|Determine file type|https://www.computerhope.com/unix/ufile.htm|
-|find|Search for files|https://www.geeksforgeeks.org/find-command-in-linux-with-examples/|
 |free|Display amount of free and used memory in the system|https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/|
 |gpg|Encryption and signing tool|https://www.techrepublic.com/blog/five-apps/protect-your-data-with-these-five-linux-encryption-tools/, https://guides.library.illinois.edu/data_encryption/gpgcheatsheet|
-|grep|Print lines matching a pattern|https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/|
 |hostnamectl|Control system hostname|man page|
 |htop|Process viewer|https://linuxtogether.org/htop-command-explanation/|
 |id|Print real and effective IDs of users and groups|https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/|
@@ -86,11 +109,10 @@
 |xargs|Make commands accept standard input as arguments|https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/|
 |xxd|Make hex dump of file or stdin displaying ASCII equivalent of each byte|https://www.howtoforge.com/linux-xxd-command/, https://opensource.com/article/19/8/dig-binary-files-hexdump|
 |zless|View contents of compressed text file with less|man page|
-|zsh|Z shell|https://opensource.com/article/19/9/getting-started-zsh, https://opensource.com/article/18/9/tips-productivity-zsh|
 
 ## Useful links
 1. [Index of Linux commands by SS64](https://ss64.com/bash/)
 1. [Explain Shell](https://explainshell.com/) - quickly lookup syntax and details of shell commands
-1. [Collection of articles on Linux by Davic McKay](https://www.howtogeek.com/author/davidmckay/)
+1. [Collection of articles on Linux by Dave McKay](https://www.howtogeek.com/author/davidmckay/)
 1. [Essential Linux commands by Linux Handbook](https://linuxhandbook.com/linux-commands/)
 1. [Linux utilities - index (The Open Group)](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/)
