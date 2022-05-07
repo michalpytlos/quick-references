@@ -1,42 +1,50 @@
 # Git - quick reference
 
-## Selected commands
-| git command | description | more info |
+## Contents
+- [Commands](#commands)
+- [Config](#config)
+- [Useful links](#useful-links)
+
+## Commands
+| Command | description | usage |
 | ------------| ----------- | --------- |
-|blame <file\>|Show what revision and author last modified each line of file|[atlassian.com](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame)|
-|branch|List, create or delete branches|[atlassian.com](https://www.atlassian.com/git/tutorials/using-branches)|
-|checkout|Switch branches or restore working tree files|git help|
-|cherry-pick <commit1\> <commit2\>|Pick commits and append to HEAD|git help|
-|config|Get or set Git configuration values|[atlassian.com](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)|
-|describe <commit\>|Find most recent tag that is reachable from commit|git help|
-|log|Show commit logs|[atlassian.com](https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history)|
-|merge <branch\>|Merge branch into current branch|[atlassian.com](https://www.atlassian.com/git/tutorials/using-branches/git-merge)|
-|mergetool|Run merge conflict resolution tools to resolve merge conflicts|[git-scm.com](https://git-scm.com/docs/git-mergetool)|
-|rebase <new_base> [<branch\>]|Change base of branch from one commit to another|[atlassian.com](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)|
-|reflog|Manage information recorded in reference logs|[git-scm.com](https://git-scm.com/docs/git-reflog)|
-|reset <older_commit\>|Move branch head backwards in time to older commit|[atlassian.com](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|
-|restore|Unstage or discard uncommitted local changes|[git-scm](https://git-scm.com/docs/git#_reset_restore_and_revert), [git-tower](https://www.git-tower.com/learn/git/commands/git-restore)|
-|revert <bad_commit\>|Invert changes introduced by commit and append new commit with resulting inverse content|git help|
-|stash| Save local modifications away and revert working directory to match HEAD commit|[atlassian.com](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)|
-|tag <tag_name\> <commit\>|Add tag to commit|git help|
+|[blame](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame)|Show what revision and author last modified each line of file|`git blame FILE`|
+||Show what revision and author last modified lines n to m of file|`blame -L n,m FILE`|
+|[branch](https://www.atlassian.com/git/tutorials/using-branches)|List, create or delete branches||
+||Move branch head to commit|`branch -f BRANCH COMMIT`|
+||List branches whose tips are reachable from commit|`branch --merged [COMMIT]`|
+|[commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)|Commit staged changes||
+||Modify the last commit without changing the message|`--amend --no-edit`|
+||Modify the last commit and declare that the authorship of the commit now belongs to the comitter|`--amend --reset-author`|
+|checkout|Switch branches or restore working tree files||
+||Discard unstaged changes to file|`checkout -- FILE`|
+||Create new branch AND check it out|`checkout -b NEW_BRANCH`|
+|cherry-pick|Pick commits and append to HEAD|`git cherry-pick COMMIT [COMMIT...]`|
+|describe|Find most recent tag that is reachable from commit|`git describe [COMMIT...]`|
+|[diff](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)|Run diff on commits, branches, files and more||
+||Show which files changed between commits (in diffstat form)|`diff --stat COMMIT_1 COMMIT_2`|
+|[log](https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history)|Show commit logs||
+|[merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)|Merge branch into current branch|`git merge BRANCH`|
+|[mergetool](https://git-scm.com/docs/git-mergetool)|Run merge conflict resolution tools to resolve merge conflicts|
+|[push](https://www.atlassian.com/git/tutorials/syncing/git-push)|Upload local repo content to remote repo||
+||Precisely define what and where to push using refspec|`push REMOTE SOURCE:DESTINATION`|
+||Delete branch on remote using refspec with empty source|`push REMOTE :REMOTE_BRANCH`|
+|[rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)|Change base of branch from one commit to another|`git rebase NEW_BASE [BRANCH]`|
+|[reflog](https://git-scm.com/docs/git-reflog)|Manage information recorded in reference logs||
+|[reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|Move branch head backwards in time to older commit|`git reset OLDER_COMMIT`|
+|[restore](https://www.git-tower.com/learn/git/commands/git-restore)|Unstage or discard uncommitted local changes||
+|revert|Invert changes introduced by commit and append new commit with resulting inverse content|`git revert BAD_COMMIT`|
+|[stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)| Save local modifications away and revert working directory to match HEAD commit||
+||Show changes recorded in stash entry in patch form|`stash show -p STASH_REF`|
+|tag|Add tag to commit|`git tag TAG_NAME COMMIT`|
 
-
-## Useful command options
-| git command | description |
-| ------------| ----------- |
-|blame -L n,m <file\>|Show what revision and author last modified lines n to m of file|
-|branch -f <branch\> <commit\>|Move branch head to commit|
-|branch --merged [<commit\>]|List branches whose tips are reachable from commit|
-|checkout -- <file\>|Discard unstaged changes to file|
-|checkout -b <new_branch\> |Create new branch AND check it out|
-|commit --amend --reset-author --no-edit||
-|config --list | show all variables in config file |
-|config <variable\> "<value\>"| set variable in config file |
-|diff --stat <commit1\> <commit2\>|Show which files changed between commits (in diffstat form)|
-|push <remote\> <source\>:<destination\>|Precisely define what and where to push using refspec|
-|push <remote\> :<remote_branch\>|Delete branch on remote using refspec with empty source|
-|stash show -p <stash_ref\>|Show changes recorded in stash entry in patch form|
-
+## Config
+| Command | description | usage |
+| ------------| ----------- | --------- |
+|[config](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)|Get or set Git configuration values||
+||Show all variables in config file |`--list`|
+||Set variable in config file |`config VARIABLE "VALUE"`|
+||Disable paging for `git branch`|`config --global pager.branch false`|
 
 ## Useful links
 ### Command refs
@@ -55,6 +63,6 @@
 2. [Git Immersion](https://gitimmersion.com/lab_01.html)
 
 ### How git works
-1. [Git refs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog)
+1. [Git refs and the reflog](https://www.atlassian.com/git/tutorials/refs-and-the-reflog)
 1. [Git for ages 4 and up - video](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
 2. [Pro Git - book](https://www.git-scm.com/book/en/v2)
