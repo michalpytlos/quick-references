@@ -6,9 +6,12 @@ To get information on the purpose of the typical default Linux directories run: 
 
 ## Important files
 
-| file | description |
-| -----| ----------- |
-| /etc/services | file mapping services to port numbers |
-| [/etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/) | user account info |
-| /etc/group | group account info ||
-| [/etc/sudoers](https://www.sudo.ws/man/1.8.15/sudoers.man.html) | sudoers file - list of who can run what |
+| file | description | usage |
+| -----| ----------- | ----- |
+| /etc/services | file mapping services to port numbers ||
+| [/etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/) | user account info ||
+| /etc/group | group account info |||
+| [/etc/sudoers](https://www.sudo.ws/man/1.8.15/sudoers.man.html) | sudoers file - list of who can run what ||
+| [/dev/null](https://stackoverflow.com/a/50267975)|null device file that discards all data written to it||
+||redirect stdout and stderr produced by COMMAND to the null device|`COMMAND &> /dev/null `|
+||send EOF to COMMAND immediately when it tries to read from stdin|`COMMAND < /dev/null`|

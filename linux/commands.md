@@ -69,6 +69,8 @@ Useful links:
 |[lsof](https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/)|List open files||
 |[mc](https://tldp.org/LDP/LG/issue23/wkndmech_dec97/mc_article.html)|Directory browsing and file manipulation program||
 |[md5sum](https://www.geeksforgeeks.org/md5sum-linux-command/)|Verify data integrity using MD5||
+|[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
+||Scan port range for listening deamons without sending any data|`nc -z -v HOST START_PORT-STOP_PORT`|
 |netstat|Use ss instead||
 |[nslookup](https://linuxhandbook.com/nslookup-command/)|Query DNS records||
 |[ntpd](https://www.systutorials.com/docs/linux/man/8-ntpd/)|Network Time Protocol (NTP) daemon||
