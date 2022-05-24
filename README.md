@@ -6,6 +6,7 @@
     - [Bash](linux/bash.md)
     - [Commands](linux/commands.md)
     - [Important files and directories](linux/files_and_dirs.md)
+    - [Zsh](linux/zsh.md)
 1. [Postgres](postgres.md)
 1. [Python](python/python.md)
     - [Alembic](python/alembic.md)
