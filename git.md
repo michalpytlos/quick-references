@@ -24,6 +24,7 @@
 |[diff](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)|Run diff on commits, branches, files and more||
 ||Show which files changed between commits (in diffstat form)|`diff --stat COMMIT_1 COMMIT_2`|
 |[log](https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history)|Show commit logs||
+||List files modified in last NUM days|`git log --since="NUM day ago" --name-only --pretty=format: \| sort -u`|
 |[merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)|Merge branch into current branch|`git merge BRANCH`|
 |[mergetool](https://git-scm.com/docs/git-mergetool)|Run merge conflict resolution tools to resolve merge conflicts|
 |[push](https://www.atlassian.com/git/tutorials/syncing/git-push)|Upload local repo content to remote repo||

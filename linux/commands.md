@@ -53,7 +53,10 @@ Useful links:
 |expand|Convert tabs to spaces||
 |[export](https://linuxhandbook.com/export-command/)|Create environment variable||
 |[fg](https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/)|Bring a background process to the foreground||
-|[file](https://www.computerhope.com/unix/ufile.htm)|Determine file type||
+|[file](https://www.computerhope.com/unix/ufile.htm)|Determine file type|`file [OPTIONS] FILE [FILE...]`|
+||brief mode|`-b, --brief`|
+||output mime type strings|`-i, --mime`|
+||look inside compressed file|`-z, --uncompress`|
 |[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
@@ -102,6 +105,8 @@ Useful links:
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
 |[tmux](https://tmuxcheatsheet.com/)|Terminal multiplexer||
 |top|use htop instead||
+|[tr](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)|Translate or delete characters|`tr [OPTION] SET1 [SET2]`|
+||Remove new lines and save to new file|`tr -d '\n' < in.txt > out.txt`|
 |[tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)|List contents of directories in a tree-like format||
 |[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
 |uname|Print system information||

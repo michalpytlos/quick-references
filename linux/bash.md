@@ -15,6 +15,7 @@
 |&&|logical AND. The second command is executed only if the first one succeeds.|
 |&#124;&#124;|logical OR. The second command is executed only when the first command fails.|
 |!|NOT operator|
+|=~|Regex match|
 |&#124;&|Pass both std output and std error of one command as input to another|
 |#|comment|
 
