@@ -6,6 +6,7 @@
     - [Queries with LIKE](#queries-with-like)
 - [Settings](#settings)
 - [Roles and privileges](#roles-and-privileges)
+- [Misc.](#miscellaneous)
 
 ## Performance
 
@@ -48,3 +49,6 @@ Create trigram index for queries with `LIKE`:
 |Schema|[pg_namespace](https://www.postgresql.org/docs/current/catalog-pg-namespace.html)|`SELECT * FROM pg_catalog.pg_namespace;`|
 |Table|[table_privileges](https://www.postgresql.org/docs/current/infoschema-table-privileges.html)|`SELECT * FROM information_schema.table_privileges;`|
 |Column|[column_privileges](https://www.postgresql.org/docs/current/infoschema-column-privileges.html)|`SELECT * FROM information_schema.column_privileges;`|
+
+## Miscellaneous
+* Use [escape strings](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-CONSTANTS) for strings with non-printable characters e.g. `E'\001'` is start of header (SOH) using [ASCII octal](https://web.cs.dal.ca/~zyu/ascii.html) encoding.
