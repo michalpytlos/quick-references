@@ -42,7 +42,7 @@ Useful links:
 |[chmod](https://ss64.com/bash/chmod.html)|Change mode of access||
 |[chown](https://ss64.com/bash/chown.html)|Changes ownership of files and directories||
 |[crontab](https://linuxhandbook.com/crontab/)|Maintain crontab files for individual users||
-|[curl](https://linuxhandbook.com/curl-command-examples/)|Transfer data||
+|[curl](https://linuxhandbook.com/curl-command-examples/)|Transfer data. Consider using [httpie](https://github.com/httpie/httpie) instead.||
 |[df](https://linuxhandbook.com/df-command/)|Report file system disk space usage||
 |[diff](https://linuxhandbook.com/diff-command/)|Analyze two files and print the lines that are different||
 |[dpkg](https://man7.org/linux/man-pages/man1/dpkg-query.1.html)|Package manager in Debian||
@@ -89,7 +89,7 @@ Useful links:
 ||Encrypt PDF file|`qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf`|
 |rlwrap|Intercept user input in order to provide readline's line editing, persistent history and completion||
 |[scp](https://www.linuxtechi.com/scp-command-examples-in-linux/)|Copy files over a secure, encrypted network connection||
-|[set](https://bash.cyberciti.biz/guide/Set_command)|Set or unset values of shell options and positional parameters||
+|[set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)|Set or unset values of shell options and positional parameters||
 |[shred](https://www.computerhope.com/unix/shred.htm)|Overwrite a file to hide its contents||
 |[sort](https://linuxhandbook.com/sort-command/)|Sort lines of text files||
 |[source](https://ss64.com/bash/source.html)|Execute content of file in current shell||
