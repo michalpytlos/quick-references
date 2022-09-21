@@ -39,6 +39,10 @@ Useful links:
 |[awk](https://linuxhandbook.com/awk-command-tutorial/)|Pattern scanning and text processing||
 |[bg](https://ss64.com/bash/bg.html)|Run jobs in the background||
 |[cat](https://ss64.com/bash/cat.html)|Join several input files by sequentially sending their content to stdout||
+||equivalent to `-vET`|`A, --show-all`|
+||display nonprinting chars except for line feed (LFD) and TAB|`v, --show-nonprinting`|
+||display `$` at end of each line|`E, --show-ends`|
+||display TAB chars as `^I`|`T, --show-tabs`|
 |[chmod](https://ss64.com/bash/chmod.html)|Change mode of access||
 |[chown](https://ss64.com/bash/chown.html)|Changes ownership of files and directories||
 |[crontab](https://linuxhandbook.com/crontab/)|Maintain crontab files for individual users||
@@ -60,6 +64,7 @@ Useful links:
 |[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
+|head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
 |[htop](https://linuxtogether.org/htop-command-explanation/)|Process viewer||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
 |[img2pdf](https://pypi.org/project/img2pdf/)|Convert raster images to PDF||
@@ -100,6 +105,10 @@ Useful links:
 |[ssh-keygen](https://www.ssh.com/ssh/keygen/)|Create new authentication key pairs for SSH||
 |[stat](https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/)|Display detailed status of file or file system||
 |[systemctl](https://tecadmin.net/tutorial/linux/linux-systemctl-command/)|Control systemd||
+|tail|print last 10 lines of each FILE to stdout|`tail [OPTIONS] [FILE...]`|
+||print last `NUM` lines|`-n NUM`|
+||print lines starting with line `NUM`|`-n +NUM`|
+||print lines `5` to `10` of FILE|`tail -n +5 FILE \| head -n 6`|
 |[tar](https://linuxhandbook.com/basic-tar-commands/)|Archive and compress files||
 |[taskset](https://www.howtoforge.com/linux-taskset-command/)|Set or retrieve CPU affinity||
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
