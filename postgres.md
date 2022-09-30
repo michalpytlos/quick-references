@@ -2,22 +2,29 @@
 
 ## Contents
 - [Performance](#performance)
-    - [Commands](#commands)
-    - [Queries with LIKE](#queries-with-like)
+    - [ANALYZE, EXPLAIN and VACUUM](#analyze-explain-and-vacuum)
+    - [Inserting large amount of data](#inserting-large-amount-of-data)
+    - [Queries with LIKE](#trigram-index-for-queries-with-like)
 - [Settings](#settings)
 - [Roles and privileges](#roles-and-privileges)
 - [Misc.](#miscellaneous)
 
 ## Performance
-
-### Commands
+###  ANALYZE, EXPLAIN and VACUUM
 | Command | description | usage |
 | ------------| ----------- | --------- |
 |[ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html)|collect statistics about the contents of tables in the database, and store the results in the pg_statistic system catalog|`ANALYZE [ VERBOSE ] [ table_and_columns [, ...] ]`|
 |[EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html)|show the execution plan of a statement|`EXPLAIN [ ( option [, ...] ) ] statement`|
 |[VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html)|garbage-collect and optionally analyze a database|`VACUUM [ ( option [, ...] ) ] [ table_and_columns [, ...] ]`|
-
-### Queries with LIKE
+### Inserting large amount of data
+1. [Disable AUTOCOMMIT when using multiple INSERTs](https://www.postgresql.org/docs/current/populate.html#DISABLE-AUTOCOMMIT)
+1. [Use COPY instead of series of INSERT commands](https://www.postgresql.org/docs/current/populate.html#POPULATE-COPY-FROM)
+1. [Remove indexes](https://www.postgresql.org/docs/current/populate.html#POPULATE-RM-INDEXES)
+1. [Remove FK constraints](https://www.postgresql.org/docs/current/populate.html#POPULATE-RM-FKEYS)
+1. [Increase maintenance_work_mem](https://www.postgresql.org/docs/current/populate.html#POPULATE-WORK-MEM)
+1. [Increase max_wal_size](https://www.postgresql.org/docs/current/populate.html#POPULATE-MAX-WAL-SIZE)
+1. [Run ANALYZE afterwards](https://www.postgresql.org/docs/current/populate.html#POPULATE-ANALYZE)
+### Trigram index for queries with LIKE
 Create trigram index for queries with `LIKE`:
 1. Load the pg_trgm extension: `CREATE EXTENSION pg_trgm`
 1. Create index: `CREATE INDEX index_name ON table_name USING GIN (column_name gin_trgm_ops)`
@@ -25,6 +32,8 @@ Create trigram index for queries with `LIKE`:
 [pg_trgm](https://www.postgresql.org/docs/current/pgtrgm.html) provides operator classes for [GIN and GiST](https://www.postgresql.org/docs/current/textsearch-indexes.html) trigram indexes.
 
 ## Settings
+
+### Displaying and altering settings
 | Command | description | usage |
 | ------------| ----------- | --------- |
 |[ALTER SYSTEM](https://www.postgresql.org/docs/current/sql-altersystem.html)|change a server configuration parameter|`ALTER SYSTEM SET configuration_parameter { TO \| = } { value \| 'value' \| DEFAULT }`|
