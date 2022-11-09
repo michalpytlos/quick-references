@@ -13,13 +13,14 @@
 |[branch](https://www.atlassian.com/git/tutorials/using-branches)|List, create or delete branches||
 ||Move branch head to commit|`branch -f BRANCH COMMIT`|
 ||List branches whose tips are reachable from commit|`branch --merged [COMMIT]`|
-|[commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)|Commit staged changes||
-||Modify the last commit without changing the message|`--amend --no-edit`|
-||Modify the last commit and declare that the authorship of the commit now belongs to the comitter|`--amend --reset-author`|
 |checkout|Switch branches or restore working tree files||
+||Get FILE from BRANCH|`checkout BRANCH -- FILE`|
 ||Discard unstaged changes to file|`checkout -- FILE`|
 ||Create new branch AND check it out|`checkout -b NEW_BRANCH`|
 |cherry-pick|Pick commits and append to HEAD|`git cherry-pick COMMIT [COMMIT...]`|
+|[commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)|Commit staged changes||
+||Modify the last commit without changing the message|`--amend --no-edit`|
+||Modify the last commit and declare that the authorship of the commit now belongs to the comitter|`--amend --reset-author`|
 |describe|Find most recent tag that is reachable from commit|`git describe [COMMIT...]`|
 |[diff](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)|Run diff on commits, branches, files and more||
 ||Show which files changed between commits (in diffstat form)|`diff --stat COMMIT_1 COMMIT_2`|
@@ -29,7 +30,7 @@
 |[mergetool](https://git-scm.com/docs/git-mergetool)|Run merge conflict resolution tools to resolve merge conflicts|
 |[push](https://www.atlassian.com/git/tutorials/syncing/git-push)|Upload local repo content to remote repo||
 ||Precisely define what and where to push using refspec|`push REMOTE SOURCE:DESTINATION`|
-||Delete branch on remote using refspec with empty source|`push REMOTE :REMOTE_BRANCH`|
+||Delete REF from remote. REF can be a branch or a tag.|`push REMOTE -d REF`|
 |[rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)|Change base of branch from one commit to another|`git rebase NEW_BASE [BRANCH]`|
 |[reflog](https://git-scm.com/docs/git-reflog)|Manage information recorded in reference logs||
 |[reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|Move branch head backwards in time to older commit|`git reset OLDER_COMMIT`|
