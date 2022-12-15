@@ -38,8 +38,8 @@ Get a list of active key bindings: `bindkey`
 1. Set Zsh as the default shell: `chsh -s $(which zsh)`
 1. [Install oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 1. [Install powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+1. Enable plugins in `.zshrc`: `plugins=(git kubectl docker docker-compose vi-mode aws z)`
 1. Restart Zsh: `exec zsh`
-1. [Enable vi-mode plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode#vi-mode-plugin)
 
 ## Useful links
 1. [Mastering Zsh - tutorial](https://github.com/rothgar/mastering-zsh)

@@ -9,6 +9,7 @@ To get information on the purpose of the typical default Linux directories run: 
 | file | description | usage |
 | -----| ----------- | ----- |
 | /etc/services | file mapping services to port numbers ||
+| [/etc/hosts](https://man7.org/linux/man-pages/man5/hosts.5.html)| static lookup table for hostnames ||
 | [/etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/) | user account info ||
 | /etc/group | group account info |||
 | [/etc/sudoers](https://www.sudo.ws/man/1.8.15/sudoers.man.html) | sudoers file - list of who can run what ||

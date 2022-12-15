@@ -39,10 +39,10 @@ Useful links:
 |[awk](https://linuxhandbook.com/awk-command-tutorial/)|Pattern scanning and text processing||
 |[bg](https://ss64.com/bash/bg.html)|Run jobs in the background||
 |[cat](https://ss64.com/bash/cat.html)|Join several input files by sequentially sending their content to stdout||
-||equivalent to `-vET`|`A, --show-all`|
-||display nonprinting chars except for line feed (LFD) and TAB|`v, --show-nonprinting`|
-||display `$` at end of each line|`E, --show-ends`|
-||display TAB chars as `^I`|`T, --show-tabs`|
+||equivalent to `-vET`|`-A, --show-all`|
+||display nonprinting chars except for line feed (LFD) and TAB|`-v, --show-nonprinting`|
+||display `$` at end of each line|`-E, --show-ends`|
+||display TAB chars as `^I`|`-T, --show-tabs`|
 |[chmod](https://ss64.com/bash/chmod.html)|Change mode of access||
 |[chown](https://ss64.com/bash/chown.html)|Changes ownership of files and directories||
 |[crontab](https://linuxhandbook.com/crontab/)|Maintain crontab files for individual users||
@@ -78,7 +78,7 @@ Useful links:
 |[mc](https://tldp.org/LDP/LG/issue23/wkndmech_dec97/mc_article.html)|Directory browsing and file manipulation program||
 |[md5sum](https://www.geeksforgeeks.org/md5sum-linux-command/)|Verify data integrity using MD5||
 |[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
-||Scan port range for listening deamons without sending any data|`nc -z -v HOST START_PORT-STOP_PORT`|
+||Scan port range for listening deamons without sending any data|`nc -zv HOST START_PORT-STOP_PORT`|
 |netstat|Use ss instead||
 |[nslookup](https://linuxhandbook.com/nslookup-command/)|Query DNS records||
 |[ntpd](https://www.systutorials.com/docs/linux/man/8-ntpd/)|Network Time Protocol (NTP) daemon||
@@ -106,6 +106,7 @@ Useful links:
 |[stat](https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/)|Display detailed status of file or file system||
 |[systemctl](https://tecadmin.net/tutorial/linux/linux-systemctl-command/)|Control systemd||
 |tail|print last 10 lines of each FILE to stdout|`tail [OPTIONS] [FILE...]`|
+||output appended data as the file grows|`-f, --follow`|
 ||print last `NUM` lines|`-n NUM`|
 ||print lines starting with line `NUM`|`-n +NUM`|
 ||print lines `5` to `10` of FILE|`tail -n +5 FILE \| head -n 6`|
