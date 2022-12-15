@@ -8,19 +8,19 @@
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
-|add|Add new dependency to pyproject.toml|`poetry add [OPTIONS] PACKAGE[@VERSION_CONSTRAINT] [PACKAGE...]`|
+|[add](https://python-poetry.org/docs/cli/#add)|Add new dependency to pyproject.toml|`poetry add [OPTIONS] PACKAGE[@VERSION_CONSTRAINT] [PACKAGE...]`|
 ||Add as dev dependency|`--dev`|
 ||Dry run|`--dry-run`|
 |check|Validate pyproject.toml|`poetry check`|
 |config|Edit config|`poetry config [OPTIONS] [KEY] [VALUE] [KEY...] [VALUE...]`|
 ||List config settings|`--list`|
-|env|Manage virtualenvs|`poetry env SUBCOMMAND`|
+|[env](https://python-poetry.org/docs/managing-environments/)|Manage virtualenvs|`poetry env SUBCOMMAND`|
 ||Display info about current environment|`env info [--path]`|
 ||List all virtualenvs associated with current project|`env list [--full-path]`|
 ||Remove virtualenv associated with project|`env remove PYTHON_EXECUTABLE`|
 ||Activate or create new virtualenv for current project|`env use PYTHON_EXECUTABLE`|
 |init|Create pyproject.toml file in current dir|`poetry init [OPTIONS]`|
-|install|Download and install dependecies from lock file. If lock file is not present, use pyproject.toml.|`poetry install [OPTIONS]`|
+|[install](https://python-poetry.org/docs/cli/#install)|Download and install dependecies from lock file. If lock file is not present, use pyproject.toml.|`poetry install [OPTIONS]`|
 ||Synchronize environment with lock file|`--sync`|
 ||Do not install current project|`--no-root`|
 ||Do not install dev dependecies|`--no-dev`|
@@ -31,10 +31,11 @@
 ||Remove package from dev dependencies|`--dev`|
 ||Do not remove package from pyproject.toml|`--dry-run`|
 |search|Search for package on remote index|`poetry search PACKAGE [PACKAGE...]`|
-|show|Display detailed info about package or list all installed packages|`poetry show [OPTIONS] [PACKAGE]`|
+|shell|Spawn shell within virtual environment|`poetry shell`|
+|[show](https://python-poetry.org/docs/cli/#show)|Display detailed info about package or list all installed packages|`poetry show [OPTIONS] [PACKAGE]`|
 ||List dependencies as tree|`-t, --tree`|
 ||Show latest versions for packages that are outdated|`-o, --outdated`|
-|update|Get latest versions of dependencies and update lock file|`poetry update [OPTIONS] [PACKAGE] [PACKAGE...]`|
+|[update](https://python-poetry.org/docs/cli/#update)|Get latest versions of dependencies and update lock file|`poetry update [OPTIONS] [PACKAGE] [PACKAGE...]`|
 ||Only update lock file|`--lock`|
 |[version](https://python-poetry.org/docs/master/cli/#version)|Show or bump version of project|`poetry version [ major \| minor \| patch ]`|
 
