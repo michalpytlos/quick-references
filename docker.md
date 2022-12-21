@@ -16,14 +16,14 @@
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
-| df | show docker disk usage | `docker sysytem df [OPTIONS]` |
+| [df](https://docs.docker.com/engine/reference/commandline/system_df/) | show docker disk usage | `docker sysytem df [OPTIONS]` |
 ||show detailed info on space usage|`-v, --verbose`|
-| events | get real time events from server |`docker events [OPTIONS]`|
+| [events](https://docs.docker.com/engine/reference/commandline/system_events/) | get real time events from server |`docker events [OPTIONS]`|
 ||filter output|`-f, --filter  FILTER*`|
 ||show events created since timestamp|`--since TIME_STRING*`|
 ||stream events until timestamp|`--until TIME_STRING*`|
-| info | display system-wide info |`docker info`|
-| prune | Remove unused containers, networks, images and, optionally, volumes |`docker system prune [OPTIONS]`|
+| [info](https://docs.docker.com/engine/reference/commandline/system_info/) | display system-wide info |`docker info`|
+| [prune](https://docs.docker.com/engine/reference/commandline/system_prune/) | Remove unused containers, networks, images and, optionally, volumes |`docker system prune [OPTIONS]`|
 ||Remove all unused images not just dangling ones|`-a, --all`|
 ||Limit scope of prune|`--filter FILTER`|
 ||Also prune volumes|`--volumes`|
@@ -35,25 +35,25 @@
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
-| attach | attach local stdin, stdout and stderr to running container |`docker attach [OPTIONS] CONTAINER`|
-| cp | copy files/dirs between container and local filesystem |`docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH \| docker cp [OPTIONS] SRC_PATH \|- CONTAINER:DEST_PATH`|
-| diff | inspect changes to files/dirs on container's filesystem |`docker diff CONTAINER`|
-| exec | run command in running container |`docker exec [OPTIONS] CONTAINER COMMAND [ARG...]`|
+| [attach](https://docs.docker.com/engine/reference/commandline/attach/) | attach local stdin, stdout and[] stderr to running container |`docker attach [OPTIONS] CONTAINER`|
+| [cp](https://docs.docker.com/engine/reference/commandline/cp/) | copy files/dirs between container and local filesystem |`docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH \| docker cp [OPTIONS] SRC_PATH \|- CONTAINER:DEST_PATH`|
+| [diff](https://docs.docker.com/engine/reference/commandline/diff/) | inspect changes to files/dirs on container's filesystem |`docker diff CONTAINER`|
+| [exec](https://docs.docker.com/engine/reference/commandline/exec/) | run command in running container |`docker exec [OPTIONS] CONTAINER COMMAND [ARG...]`|
 || set env vars | `-e, --env` |
 || keep stdin opened | `-i, --interactive` |
 || allocate pseudo-TTY | `-t, --tty` |
-| inspect | display detailed info on one or more containers |`docker inspect [OPTIONS] CONTAINER [CONTAINER...]`|
+| [inspect](https://docs.docker.com/engine/reference/commandline/inspect/) | display detailed info on one or more containers |`docker inspect [OPTIONS] CONTAINER [CONTAINER...]`|
 || check if container is running |`docker inspect -f {{.State.Running}} CONTAINER`|
-| logs | fetch logs of container |`docker logs [OPTIONS] CONTAINER`|
+| [logs](https://docs.docker.com/engine/reference/commandline/logs/) | fetch logs of container |`docker logs [OPTIONS] CONTAINER`|
 || follow log output | `-f, --follow` |
 || show n lines from tail | `-n, --tail` |
 || show timestamps |`-t, --timestamps`|
 || show logs since timestamp | `--since 2022-01-01T00:00:00Z` |
 || show logs before timestamp (42 minutes ago) |`--until 42m`|
-| port | list port mappings for container |`docker port CONTAINER`|
-| ps | list containers | `docker ps [OPTIONS]` |
-| stats | display live stream of container resource usage stats |`docker stats [OPTIONS] [CONTAINER...]`|
-| top | display running processes of container |`docker top CONTAINER [ps OPTIONS]`|
+| [port](https://docs.docker.com/engine/reference/commandline/port/) | list port mappings for container |`docker port CONTAINER`|
+| [ps](https://docs.docker.com/engine/reference/commandline/ps/) | list containers | `docker ps [OPTIONS]` |
+| [stats](https://docs.docker.com/engine/reference/commandline/stats/) | display live stream of container resource usage stats |`docker stats [OPTIONS] [CONTAINER...]`|
+| [top](https://docs.docker.com/engine/reference/commandline/top/) | display running processes of container |`docker top CONTAINER [ps OPTIONS]`|
 
 Manage commands: `create | rm | start | stop | kill | run | restart | pause | unpause | update | rename`
 
@@ -64,14 +64,14 @@ Other commands: `ls | prune | commit | wait`
 
 | Command | description | usage |
 | ------- | ----------- | ----- |
-| build | build image from Dockerfile | `docker image build [OPTIONS] ( PATH \| URL \| - )`
+| [build](https://docs.docker.com/engine/reference/commandline/image_build/) | build image from Dockerfile | `docker image build [OPTIONS] ( PATH \| URL \| - )`
 || do not use cache when building image | `--no-cache` |
 || name and optionally tag image | `--tag NAME:TAG` |
 || set target build stage | `--target BUILD_STAGE` |
-| history | show history of image |`docker history [OPTIONS] IMAGE`|
-| pull | pull image or repo from registry |`docker pull [OPTIONS] NAME[:TAG\|@DIGEST]`|
-| push | push image or repo to registry |`docker push [OPTIONS] NAME[:TAG]`|
-| tag | create tag that refers to source image | `docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]` |
+| [history](https://docs.docker.com/engine/reference/commandline/image_history/) | show history of image |`docker history [OPTIONS] IMAGE`|
+| [pull](https://docs.docker.com/engine/reference/commandline/image_pull/) | pull image or repo from registry |`docker pull [OPTIONS] NAME[:TAG\|@DIGEST]`|
+| [push](https://docs.docker.com/engine/reference/commandline/image_push/) | push image or repo to registry |`docker push [OPTIONS] NAME[:TAG]`|
+| [tag](https://docs.docker.com/engine/reference/commandline/image_tag/) | create tag that refers to source image | `docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]` |
 
 Other commands: `inspect | ls | prune | rm | save | load`
 
