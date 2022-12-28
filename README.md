@@ -11,5 +11,6 @@
 1. [Python](python/python.md)
     - [Alembic](python/alembic.md)
     - [Poetry](python/poetry.md)
+1. [Tmux](tmux.md)
 1. [Vim](vim.md)
 1. [Miscellaneous](misc.md)
