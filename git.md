@@ -31,6 +31,7 @@
 |[push](https://www.atlassian.com/git/tutorials/syncing/git-push)|Upload local repo content to remote repo||
 ||Precisely define what and where to push using refspec|`push REMOTE SOURCE:DESTINATION`|
 ||Delete REF from remote. REF can be a branch or a tag.|`push REMOTE -d REF`|
+||Delete TAG from remote. Use this version if there is a branch with the same name.|`push REMOTE -d refs/tags/TAG`|
 |[rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)|Change base of branch from one commit to another|`git rebase NEW_BASE [BRANCH]`|
 |[reflog](https://git-scm.com/docs/git-reflog)|Manage information recorded in reference logs||
 |[reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|Move branch head backwards in time to older commit|`git reset OLDER_COMMIT`|
