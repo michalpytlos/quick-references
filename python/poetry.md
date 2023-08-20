@@ -3,6 +3,7 @@
 ## Contents
 - [CLI](#selected-commands)
 - [Version constraints](#version-constraints)
+- [Env with custom Python version](#env-with-custom-python-version)
 
 ## Selected commands
 
@@ -47,3 +48,10 @@ Reference: [CLI docs](https://python-poetry.org/docs/cli/)
 |`^1.2.3`|Allow for minor- and patch-level updates|[caret](https://python-poetry.org/docs/dependency-specification/#caret-requirements)|
 |`~1.2.3`|Allow for patch-level updates|[tilde](https://python-poetry.org/docs/dependency-specification/#tilde-requirements)|
 |`1.2.*`|Allow for latest where wildcard is positioned|[wildcard](https://python-poetry.org/docs/dependency-specification/#wildcard-requirements)|
+
+## Env with custom Python version
+
+1. Set Python version: `pyenv shell <version>`
+1. Get path to Python executable: `pyenv which python`
+1. Create env: `poetry env use <path_to_python>`
+
