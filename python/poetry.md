@@ -51,7 +51,6 @@ Reference: [CLI docs](https://python-poetry.org/docs/cli/)
 
 ## Env with custom Python version
 
-1. Set Python version: `pyenv shell <version>`
-1. Get path to Python executable: `pyenv which python`
-1. Create env: `poetry env use <path_to_python>`
+1. Set Python version in the current terminal session: `pyenv shell <version>`
+1. Create env: `pyenv which python | xargs poetry env use`
 
