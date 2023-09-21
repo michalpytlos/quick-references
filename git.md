@@ -25,7 +25,12 @@
 |[diff](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)|Run diff on commits, branches, files and more||
 ||Show which files changed between commits (in diffstat form)|`git diff --stat COMMIT_1 COMMIT_2`|
 |[log](https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history)|Show commit logs||
-||List files modified in last NUM days|`git log --since="NUM day ago" --pretty="" --name-only \| sort -u`|
+||Limit to committed after date. Date can be absolute ("2020-01-01") or relative ("2 hours ago").|`--after=<date>`|
+||Limit to committed before date|`--before=<date>`|
+||Limit to with log message that matches pattern|`--grep=<pattern>`|
+||Limit to with author that matches pattern|`--author=<pattern>`|
+||Limit to ones that modified file|`-- <file-path>`|
+||List files modified in last num days|`git log --since="<num> days ago" --pretty="" --name-only \| sort -u`|
 |[merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)|Merge branch into current branch|`git merge BRANCH`|
 |[mergetool](https://git-scm.com/docs/git-mergetool)|Run merge conflict resolution tools to resolve merge conflicts|
 |[push](https://www.atlassian.com/git/tutorials/syncing/git-push)|Upload local repo content to remote repo||
@@ -49,7 +54,7 @@
 |[config](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)|Get or set Git configuration values||
 ||Show all variables in config file |`--list`|q
 ||Set variable in config file |`git config VARIABLE "VALUE"`|
-||Disable paging for `git branch`|`config --global pager.branch false`|
+||Disable paging for `git branch`|`git config --global pager.branch false`|
 
 ## Useful links
 ### Command refs
