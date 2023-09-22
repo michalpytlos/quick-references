@@ -4,6 +4,7 @@
 
 1. [Searching](#searching)
 1. [Text viewing and manipulation](#text-viewing-and-manipulation)
+1. [Processes](#processes)
 1. [Other commands A-Z](#Other-commands)
 1. [Useful links](#useful-links)
 
@@ -56,6 +57,33 @@ Useful links:
 |[wc](https://www.tecmint.com/wc-command-examples/)|Newline, word, byte and characters counts in files||
 |zless|View contents of compressed text file with less||
 
+## Processes
+| command | description | usage |
+| ------- |------------ | --------- |
+|[htop](https://linuxtogether.org/htop-command-explanation/)|Process viewer||
+|lsof|List open files||
+||limit to process|`-p PID`|
+||limit to user|`-u USER`|
+||limit to directory|`+D DIRECTORY`|
+||display information about network connections|`-i`|
+||display port numbers (not port names)|`-P`|
+||display IP addresses (not hostnames)|`-n`|
+||specify socket type and state filter|`-s SOCKET_TYPE:STATE`|
+||list listening TCP ports |`sudo lsof -i -P -n -s TCP:LISTEN`|
+|pgrep|List PIDs of processes matching pattern|`pgrep [OPTIONS] PATTERN`|
+||Show only processes owned by user|`-u USER`|
+|pidof|Find the process ID of a running program||
+|pkill|Send specified signal to processes|`pkill [OPTIONS] PATTERN`|
+||Send SIGKILL|`-9`|
+|ps|Display information about running processes||
+||Show all processes|`-e`|
+||Extra full format|`-F`|
+||Show processes owned by user|`-u USER`|
+|pstree|Display tree of processes|`pstree [OPTIONS] [PID, USER]`|
+||Show PIDs|`-p`|
+||Show UID (User Identifier) transitions|`-u`|
+
+
 ## Other commands
 
 | command | description | usage |
@@ -82,7 +110,6 @@ Useful links:
 |[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
-|[htop](https://linuxtogether.org/htop-command-explanation/)|Process viewer||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
 |[img2pdf](https://pypi.org/project/img2pdf/)|Convert raster images to PDF||
 |[ip](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)|Configure IP addresses, network interfaces, and routing rules||
@@ -90,7 +117,6 @@ Useful links:
 |[ln](https://www.computerhope.com/unix/uln.htm)|Make links between files||
 ||[Hard link vs soft link](https://linuxgazette.net/105/pitcher.html)||
 |[lscpu](https://www.cyberciti.biz/faq/lscpu-command-find-out-cpu-architecture-information/)|Display information about the CPU architecture||
-|[lsof](https://www.howtogeek.com/426031/how-to-use-the-linux-lsof-command/)|List open files||
 |[mc](https://tldp.org/LDP/LG/issue23/wkndmech_dec97/mc_article.html)|Directory browsing and file manipulation program||
 |[md5sum](https://www.geeksforgeeks.org/md5sum-linux-command/)|Verify data integrity using MD5||
 |[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
@@ -100,11 +126,9 @@ Useful links:
 |[ntpd](https://www.systutorials.com/docs/linux/man/8-ntpd/)|Network Time Protocol (NTP) daemon||
 ||[Sync Linux server time with Network Time servers](https://www.howtogeek.com/tips/how-to-sync-your-linux-server-time-with-network-time-servers-ntp/)||
 |[ntpdate](https://www.tecmint.com/synchronize-time-with-ntp-in-linux/)|Set the date and time via NTP||
-|pidof|Find the process ID of a running program||
 |[pinky](https://www.howtogeek.com/427004/how-to-use-the-pinky-command-on-linux/)|Print information on system users||
 |[ping](https://linuxhandbook.com/ping-command/)|Send echo request to network server||
 |[printenv](https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/)|List environment variables||
-|[ps](https://linuxhandbook.com/ps-command/)|Display information about running processes||
 |[qpdf](https://qpdf.readthedocs.io/en/latest/cli.html)|Transform PDF files||
 ||Merge PDF files|`qpdf --empty --pages *.pdf -- out.pdf`|
 ||Encrypt PDF file|`qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf`|
@@ -124,7 +148,6 @@ Useful links:
 |[taskset](https://www.howtoforge.com/linux-taskset-command/)|Set or retrieve CPU affinity||
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
 |[tmux](https://tmuxcheatsheet.com/)|Terminal multiplexer||
-|top|use htop instead||
 |[tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)|List contents of directories in a tree-like format||
 |[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
 |uname|Print system information||
