@@ -13,4 +13,5 @@
     - [Poetry](python/poetry.md)
 1. [Tmux](tmux.md)
 1. [Vim](vim.md)
+1. [Web development](web-development.md)
 1. [Miscellaneous](misc.md)
