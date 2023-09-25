@@ -38,10 +38,10 @@ Useful links:
 | ------- |------------ | --------- |
 |[awk](https://linuxhandbook.com/awk-command-tutorial/)|Pattern scanning and text processing||
 |[cat](https://ss64.com/bash/cat.html)|Join several input files by sequentially sending their content to stdout||
-||equivalent to `-vET`|`-A, --show-all`|
 ||display nonprinting chars except for line feed (LFD) and TAB|`-v, --show-nonprinting`|
 ||display `$` at end of each line|`-E, --show-ends`|
 ||display TAB chars as `^I`|`-T, --show-tabs`|
+||equivalent to `-vET`|`-A, --show-all`|
 |[diff](https://linuxhandbook.com/diff-command/)|Analyze two files and print the lines that are different||
 |expand|Convert tabs to spaces||
 |head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
@@ -95,7 +95,9 @@ Useful links:
 |netstat|Use ss instead||
 |[nslookup](https://linuxhandbook.com/nslookup-command/)|Query DNS records||
 |[ping](https://linuxhandbook.com/ping-command/)|Send echo request to network server||
-|[scp](https://www.linuxtechi.com/scp-command-examples-in-linux/)|Copy files over a secure, encrypted network connection||
+|scp|Copy files over a secure, encrypted network connection|`scp [OPTIONS] SOURCE TARGET`|
+||Copy to remote server|`scp /path/to/local/file user@remote_server:/destination/path`|
+||Recursive copy|`-r`|
 |[ss](https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html)|Investigate sockets||
 |[ssh](https://www.ssh.com/ssh/command/)|SSH client||
 ||[Local port forwarding](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding)|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
