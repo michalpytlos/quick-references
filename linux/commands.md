@@ -5,7 +5,9 @@
 1. [Searching](#searching)
 1. [Text viewing and manipulation](#text-viewing-and-manipulation)
 1. [Processes](#processes)
-1. [Network](#network)
+1. [Remote machines](#remote-machines)
+1. [Network utils](#network-utils)
+1. [Network configuration](#network-configuration)
 1. [Other commands A-Z](#Other-commands)
 1. [Useful links](#useful-links)
 
@@ -84,27 +86,34 @@ Useful links:
 ||Show PIDs|`-p`|
 ||Show UID (User Identifier) transitions|`-u`|
 
-## Network
+## Remote machines
+| command | description | usage |
+| ------- |------------ | --------- |
+|scp|Copy files over a secure, encrypted network connection|`scp [OPTIONS] SOURCE TARGET`|
+||Copy to remote server|`scp /path/to/local/file user@remote_server:/destination/path`|
+||Recursive copy|`-r`|
+|[ssh](https://www.ssh.com/ssh/command/)|SSH client||
+||[Local port forwarding](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding)|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
+|[ssh-copy-id](https://www.ssh.com/ssh/copy-id)|Install SSH key on server as authorized key||
+|[ssh-keygen](https://www.ssh.com/ssh/keygen/)|Create new authentication key pairs for SSH||
+
+## Network utils
 | command | description | usage |
 | ------- |------------ | --------- |
 |[curl](https://linuxhandbook.com/curl-command-examples/)|Transfer data. Consider using [httpie](https://github.com/httpie/httpie) instead.||
-|hostnamectl|Control system hostname||
-|[ip](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)|Configure IP addresses, network interfaces, and routing rules||
 |[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
 ||Scan port range for listening deamons without sending any data|`nc -zv HOST START_PORT-STOP_PORT`|
 |netstat|Use ss instead||
 |[nslookup](https://linuxhandbook.com/nslookup-command/)|Query DNS records||
 |[ping](https://linuxhandbook.com/ping-command/)|Send echo request to network server||
-|scp|Copy files over a secure, encrypted network connection|`scp [OPTIONS] SOURCE TARGET`|
-||Copy to remote server|`scp /path/to/local/file user@remote_server:/destination/path`|
-||Recursive copy|`-r`|
 |[ss](https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html)|Investigate sockets||
-|[ssh](https://www.ssh.com/ssh/command/)|SSH client||
-||[Local port forwarding](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding)|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
-|[ssh-copy-id](https://www.ssh.com/ssh/copy-id)|Install SSH key on server as authorized key||
-|[ssh-keygen](https://www.ssh.com/ssh/keygen/)|Create new authentication key pairs for SSH||
-|[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
 |[wget](https://www.computerhope.com/unix/wget.htm)|Download files over network||
+
+## Network configuration
+| command | description | usage |
+| ------- |------------ | --------- |
+|[ip](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)|Configure IP addresses, network interfaces, and routing rules||
+|[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
 
 
 ## Other commands
@@ -131,6 +140,7 @@ Useful links:
 ||look inside compressed file|`-z, --uncompress`|
 |[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
+|hostnamectl|Control system hostname||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
 |[img2pdf](https://pypi.org/project/img2pdf/)|Convert raster images to PDF||
 |[jobs](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/)|Show active jobs in shell||
@@ -157,6 +167,7 @@ Useful links:
 |[taskset](https://www.howtoforge.com/linux-taskset-command/)|Set or retrieve CPU affinity||
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
 |[tmux](https://tmuxcheatsheet.com/)|Terminal multiplexer||
+|trap|Set up signal handling by script or shell|`trap COMMAND SIGNAL [SIGNAL...]`|
 |[tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)|List contents of directories in a tree-like format||
 |uname|Print system information||
 |[usermod](https://www.tecmint.com/usermod-command-examples/)|Modify user account||
