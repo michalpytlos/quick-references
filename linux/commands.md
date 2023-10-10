@@ -7,7 +7,7 @@
 1. [Processes](#processes)
 1. [Remote machines](#remote-machines)
 1. [Network utils](#network-utils)
-1. [Network configuration](#network-configuration)
+1. [Scripting](#scripting)
 1. [Other commands A-Z](#Other-commands)
 1. [Useful links](#useful-links)
 
@@ -109,15 +109,13 @@ Useful links:
 |[ss](https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html)|Investigate sockets||
 |[wget](https://www.computerhope.com/unix/wget.htm)|Download files over network||
 
-## Network configuration
+## Scripting
 | command | description | usage |
 | ------- |------------ | --------- |
-|[ip](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)|Configure IP addresses, network interfaces, and routing rules||
-|[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
-
+|[getopts](https://www.howtogeek.com/778410/how-to-use-getopts-to-parse-linux-shell-script-options/)|Process command line args||
+|trap|Set up signal handling by script or shell|`trap COMMAND SIGNAL [SIGNAL...]`|
 
 ## Other commands
-
 | command | description | usage |
 | ------- |------------ | --------- |
 |[apt](https://ss64.com/bash/apt.html)|Package manager in Debian||
@@ -143,6 +141,7 @@ Useful links:
 |hostnamectl|Control system hostname||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
 |[img2pdf](https://pypi.org/project/img2pdf/)|Convert raster images to PDF||
+|[ip](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)|Configure IP addresses, network interfaces, and routing rules||
 |[jobs](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/)|Show active jobs in shell||
 |[ln](https://www.computerhope.com/unix/uln.htm)|Make links between files||
 ||[Hard link vs soft link](https://linuxgazette.net/105/pitcher.html)||
@@ -167,8 +166,8 @@ Useful links:
 |[taskset](https://www.howtoforge.com/linux-taskset-command/)|Set or retrieve CPU affinity||
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
 |[tmux](https://tmuxcheatsheet.com/)|Terminal multiplexer||
-|trap|Set up signal handling by script or shell|`trap COMMAND SIGNAL [SIGNAL...]`|
 |[tree](https://www.geeksforgeeks.org/tree-command-unixlinux/)|List contents of directories in a tree-like format||
+|[ufw](https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/)|Manage netfilter firewall||
 |uname|Print system information||
 |[usermod](https://www.tecmint.com/usermod-command-examples/)|Modify user account||
 |[visudo](https://www.computerhope.com/unix/visudo.htm)|Edit sudoers file||
@@ -181,6 +180,4 @@ Useful links:
 ## Useful links
 1. [Index of Linux commands by SS64](https://ss64.com/bash/)
 1. [Explain Shell](https://explainshell.com/) - quickly lookup syntax and details of shell commands
-1. [Collection of articles on Linux by Dave McKay](https://www.howtogeek.com/author/davidmckay/)
-1. [Essential Linux commands by Linux Handbook](https://linuxhandbook.com/linux-commands/)
 1. [Linux utilities - index (The Open Group)](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/)
