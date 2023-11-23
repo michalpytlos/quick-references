@@ -2,14 +2,19 @@
 
 ## Contents
 * [Code review](#code-review)
+* [Diagrams](#diagrams)
 * [Effective speaking](#effective-speaking)
 * [Kubernetes](#kubernetes)
-* [Software development](#software-development)
 * [WSL](#wsl)
 
 ## Code review
 1. [Conventional Comments](https://conventionalcomments.org/) - standard for formatting review comments
 1. [Code Review Developer Guide by Google](https://google.github.io/eng-practices/review/)
+
+## Diagrams
+1. [PlantUML reference](https://plantuml.com/) - diagrams as code
+1. [Hitchhiker’s Guide to PlantUML](https://crashedmind.github.io/PlantUMLHitchhikersGuide/) - advanced PlantUML diagrams
+1. [PlantUML color reference](https://plantuml-documentation.readthedocs.io/en/latest/formatting/color-names.html)
 
 ## Effective speaking
 1. [How to speak](https://www.youtube.com/watch?v=Unzc731iCUY) - Lecture by Patrick Winston
@@ -17,10 +22,6 @@
 ## Kubernetes
 1. [kubectx](https://github.com/ahmetb/kubectx) - switch between contexts (clusters) on kubectl faster
 1. [kubens](https://github.com/ahmetb/kubectx) - switch between namespaces on kubectl faster
-
-## Software development
-1. [Martin Fowler](https://martinfowler.com/)
-1. [Feature flags](https://martinfowler.com/articles/feature-toggles.html)
 
 ## WSL
 
