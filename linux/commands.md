@@ -28,8 +28,14 @@
 ||print NUM lines of leading context| `-B NUM` |
 ||print NUM lines of output context| `-C NUM` |
 ||PATTERNS are extended regexp| `-E, --extended-regexp` |
+|[ripgrep](https://github.com/BurntSushi/ripgrep#readme)|Modern alternative to grep|`rg [OPTIONS] 'PATTERN' [PATH...]`|
+||Only search files matching TYPE|`-t, --type TYPE`|
+||List all available types|`--type-list`|
+||Print files that would be searched|`--files`|
 |[find](https://ss64.com/bash/find.html)|Search for files|`find [-H] [-L] [-P] [PATH...] [EXPRESSION]`|
 ||Search by filename using glob pattern|`find PATH -name 'PATTERN'`|
+|[fzf](https://github.com/junegunn/fzf#table-of-contents)|Fuzzy finder||
+||Select file and open in Neovim|`nvim $(fzf)`|
 
 Useful links:
 * [Introduction to grep with examples](https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/)

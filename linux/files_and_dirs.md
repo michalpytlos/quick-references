@@ -8,6 +8,8 @@ To get information on the purpose of the typical default Linux directories run: 
 
 | file | description | usage |
 | -----| ----------- | ----- |
+| [/etc/apt/sources.list](https://manpages.debian.org/bookworm/apt/sources.list.5.en.html) | list of sources from which apt packages can be obtained||
+|[/etc/apt/sources.list.d](https://manpages.debian.org/bookworm/apt/sources.list.5.en.html#SOURCES.LIST.D)|directory with additional source.list entries stored in separate files||
 | /etc/services | file mapping services to port numbers ||
 | [/etc/hosts](https://man7.org/linux/man-pages/man5/hosts.5.html)| static lookup table for hostnames ||
 | [/etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/) | user account info ||

@@ -1,14 +1,14 @@
 # PostgreSQL - quick reference
 
 ## Contents
-- [System stats and info](#system-info-and-statistics)
-- [Settings](#settings)
-- [Roles and privileges](#roles-and-privileges)
-- [Performance](#performance)
+1. [System stats and info](#system-info-and-statistics)
+1. [Settings](#settings)
+1. [Roles and privileges](#roles-and-privileges)
+1. [Performance](#performance)
     - [ANALYZE, EXPLAIN and VACUUM](#analyze-explain-and-vacuum)
     - [Inserting large amount of data](#inserting-large-amount-of-data)
     - [Queries with LIKE](#trigram-index-for-queries-with-like)
-- [Misc.](#miscellaneous)
+1. [Miscellaneous](#miscellaneous)
 
 ## System stats and info
 | Table | description |
@@ -66,4 +66,10 @@ Create trigram index for queries with `LIKE`:
 [pg_trgm](https://www.postgresql.org/docs/current/pgtrgm.html) provides operator classes for [GIN and GiST](https://www.postgresql.org/docs/current/textsearch-indexes.html) trigram indexes.
 
 ## Miscellaneous
-* Use [escape strings](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-CONSTANTS) for strings with non-printable characters e.g. `E'\001'` is start of header (SOH) using [ASCII octal](https://web.cs.dal.ca/~zyu/ascii.html) encoding.
+
+### Packages for Debian
+* list of currently supported packages: https://wiki.postgresql.org/wiki/Apt
+* older packages are in `apt-archive.postgresql.org` and to get them, apt has to be configured as per manual repo configuration section in [wiki](https://wiki.postgresql.org/wiki/Apt)
+
+### Escape strings and non-printable characters
+* Use [escape strings](https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-STRINGS-ESCAPE) for strings with non-printable characters e.g. `E'\001'` is start of header (SOH) using [ASCII octal](https://web.cs.dal.ca/~zyu/ascii.html) encoding.
