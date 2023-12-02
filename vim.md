@@ -1,12 +1,13 @@
 # Vim - quick reference
 
 ## Contents
-- [Normal mode](#normal-mode)
-- [Visual mode](#visual-mode)
-- [Insert mode](#insert-mode)
-- [Search and replace](#search-and-replace)
-- [Command mode](#command-mode)
-- [Useful links](#useful-links)
+1. [Normal mode](#normal-mode)
+1. [Visual mode](#visual-mode)
+1. [Insert mode](#insert-mode)
+1. [Search and replace](#search-and-replace)
+1. [Command mode](#command-mode)
+1. [Neovim setup](#neovim-setup)
+1. [Useful links](#useful-links)
 
 ## Normal mode
 | Command | description |
@@ -93,6 +94,31 @@
 | ------- | ----------- |
 | :reg | show content of all registers |
 
+## Neovim setup
+1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
+1. Create config file: `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
+```vim
+" Plugins
+call plug#begin()
+
+Plug 'joshdick/onedark.vim'
+Plug 'tpope/vim-commentary'
+
+call plug#end()
+
+" Settings
+syntax enable
+colorscheme onedark
+set number
+set relativenumber
+
+" Key mappings
+nnoremap <C-_> :Commentary<CR>  " <C-_> is Ctrl + /
+vnoremap <C-_> :Commentary<CR>
+
+```
+3. Install plugins: `:PlugInstall`
+
+
 ## Useful links
 1. [Extensive Vim cheat sheet](https://vim.rtorr.com/)
-2. [Vim setup for Python development](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
