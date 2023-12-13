@@ -4,8 +4,7 @@
 1. [Normal mode](#normal-mode)
 1. [Visual mode](#visual-mode)
 1. [Insert mode](#insert-mode)
-1. [Search and replace](#search-and-replace)
-1. [Command mode](#command-mode)
+1. [Command-line mode](#command-line-mode)
 1. [Neovim setup](#neovim-setup)
 1. [Useful links](#useful-links)
 
@@ -79,19 +78,17 @@
 | Ctrl + u | delete everything to left of cursor |
 | Ctrl + o D | delete everything to right of cursor |
 
-## Search and replace
+## Command-line mode
 | Command | description |
 | ------- | ----------- |
-| /pattern | search for pattern |
+| :%s/old/new/g | Substitute. Search for `old` and replace with `new`.|
+| :%s/old/new/gc | substitute with confirmations |
+| :g/pattern/d | delete all lines that match pattern|
+| :v/pattenr/d | delete all lines that do not match pattern|
+| /pattern | search forward (downwards) for pattern |
 | ?pattern | search backward for pattern |
 | n | next/repeat search in same direction |
 | N | repeat search in opposite direction |
-| :%s/old/new/g | replace all old with new |
-| :%s/old/new/gc | replace all old with new with confirmations |
-
-## Command mode
-| Command | description |
-| ------- | ----------- |
 | :reg | show content of all registers |
 
 ## Neovim setup
