@@ -55,12 +55,16 @@ Useful links:
 |head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
 |[less](https://www.howtogeek.com/444233/how-to-use-the-less-command-on-linux/)|View contents of a text file one screen at a time||
 |[rich-cli](https://github.com/Textualize/rich-cli)|syntax highlight text from file or command line||
+|sed|stream editor||
+||print lines `5` to `10` of file|`sed -n '5,10p' FILE`|
+||substitute `old` with `new`|`sed -i 's/old/new/g' FILE`|
+||delete all lines containing pattern|`sed -i '/PATTERN/d' FILE`|
+||delete lines from `5` to the end of file|`sed -i '5,$d' FILE`|
 |[sort](https://linuxhandbook.com/sort-command/)|Sort lines of text files||
 |tail|print last 10 lines of each FILE to stdout|`tail [OPTIONS] [FILE...]`|
 ||output appended data as the file grows|`-f, --follow`|
 ||print last `NUM` lines|`-n NUM`|
 ||print lines starting with line `NUM`|`-n +NUM`|
-||print lines `5` to `10` of FILE|`tail -n +5 FILE \| head -n 6`|
 |[tr](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)|Translate or delete characters|`tr [OPTION] SET1 [SET2]`|
 ||Remove new lines and save to new file|`tr -d '\n' < in.txt > out.txt`|
 |[wc](https://www.tecmint.com/wc-command-examples/)|Newline, word, byte and characters counts in files||
@@ -99,7 +103,9 @@ Useful links:
 ||Copy to remote server|`scp /path/to/local/file user@remote_server:/destination/path`|
 ||Recursive copy|`-r`|
 |[ssh](https://www.ssh.com/ssh/command/)|SSH client||
-||[Local port forwarding](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding)|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
+||Execute command on remote server|`ssh remote_server 'command'`|
+||[SSH tunneling](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding). Forward local port to port on target server through jump server|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
+||Forward local port to port on remote server|`ssh -L localhost:LOCAL_PORT:localhost:REMOTE_PORT USER@REMOTE_SERVER`|
 |[ssh-copy-id](https://www.ssh.com/ssh/copy-id)|Install SSH key on server as authorized key||
 |[ssh-keygen](https://www.ssh.com/ssh/keygen/)|Create new authentication key pairs for SSH||
 
