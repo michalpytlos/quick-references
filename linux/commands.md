@@ -112,7 +112,16 @@ Useful links:
 ## Network utils
 | command | description | usage |
 | ------- |------------ | --------- |
-|[curl](https://linuxhandbook.com/curl-command-examples/)|Transfer data. Consider using [httpie](https://github.com/httpie/httpie) instead.||
+|curl|Transfer data to or from server|`curl [OPTIONS] URL`|
+||Specify HTTP request method|`-X METHOD`|
+||Extra header in HTTP request|`-H 'HEADER_NAME: HEADER_VALUE'`|
+||Send data in POST request to HTTP server|`-d 'DATA'`|
+||Send JSON payload to HTTP server|`curl -X POST -H 'Content-Type: application/json' -d '{"key1":"val1","key2":"val2"}' URL`|
+||Specify file to which write all cookies after completed operation|`-c, --cookie-jar FILE`|
+||Pass data to server in cookie header|`-b, --cookie (DATA \| FILE)`|
+||Include HTTP response headers in output|`-i, --include`|
+||Write output to file instead of stdout|`-o, --output FILE`|
+|[httpie](https://github.com/httpie/httpie)|Command-line http client||
 |[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
 ||Scan port range for listening deamons without sending any data|`nc -zv HOST START_PORT-STOP_PORT`|
 |netstat|Use ss instead||
