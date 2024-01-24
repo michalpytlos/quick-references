@@ -46,6 +46,8 @@
 ||List files affected by commit together with their status|`git show --pretty="" --name-status COMMIT`|
 |[stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)| Save local modifications away and revert working directory to match HEAD commit||
 ||Show changes recorded in stash entry in patch form|`git stash show -p STASH_REF`|
+|[submodule](https://git-scm.com/docs/git-submodule)|Manage submodules||
+||Initialize, fetch and checkout all submodules for the repo|`git submodule update --init`|
 |tag|Add tag to commit|`git tag TAG_NAME COMMIT`|
 
 ## Config
@@ -64,9 +66,6 @@
 4. [learn x in y minutes](https://learnxinyminutes.com/docs/git/)
 5. [How to read command synopsis](https://github.com/git/git/blob/master/Documentation/CodingGuidelines) (section *Writing documentation*)
 6. [How to undo (almost) anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
-
-### Tools
-1. [Meld](https://meldmerge.org/) + [how to set it up](https://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool)
 
 ### Tutorials
 1. [Learn Git Branching](https://learngitbranching.js.org/)
