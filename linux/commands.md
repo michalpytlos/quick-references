@@ -53,6 +53,7 @@ Useful links:
 |[diff](https://linuxhandbook.com/diff-command/)|Analyze two files and print the lines that are different||
 |expand|Convert tabs to spaces||
 |head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
+|jq|JSON processor||
 |[less](https://www.howtogeek.com/444233/how-to-use-the-less-command-on-linux/)|View contents of a text file one screen at a time||
 |[rich-cli](https://github.com/Textualize/rich-cli)|syntax highlight text from file or command line||
 |sed|stream editor||
@@ -115,8 +116,8 @@ Useful links:
 |curl|Transfer data to or from server|`curl [OPTIONS] URL`|
 ||Specify HTTP request method|`-X METHOD`|
 ||Extra header in HTTP request|`-H 'HEADER_NAME: HEADER_VALUE'`|
-||Send data in POST request to HTTP server|`-d 'DATA'`|
 ||Send JSON payload to HTTP server|`curl -X POST -H 'Content-Type: application/json' -d '{"key1":"val1","key2":"val2"}' URL`|
+||Send form data to HTTP server|`curl -X POST -d 'username=abc&password=123' URL`|
 ||Specify file to which write all cookies after completed operation|`-c, --cookie-jar FILE`|
 ||Pass data to server in cookie header|`-b, --cookie (DATA \| FILE)`|
 ||Include HTTP response headers in output|`-i, --include`|
