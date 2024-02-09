@@ -36,6 +36,9 @@
 ||Print files that would be searched|`--files`|
 |[find](https://ss64.com/bash/find.html)|Search for files|`find [-H] [-L] [-P] [PATH...] [EXPRESSION]`|
 ||Search by filename using glob pattern|`find PATH -name 'PATTERN'`|
+||Exclude directory from search|`find . -name 'dir_to_exclude' -prune -o -name '*.log' -print`|
+||If the file is directory do not descend into it|`-prune`|
+||Logical OR operator|`-o`|
 |[fzf](https://github.com/junegunn/fzf#table-of-contents)|Fuzzy finder||
 ||Select file and open in Neovim|`nvim $(fzf)`|
 
@@ -52,6 +55,8 @@ Useful links:
 ||display `$` at end of each line|`-E, --show-ends`|
 ||display TAB chars as `^I`|`-T, --show-tabs`|
 ||equivalent to `-vET`|`-A, --show-all`|
+|[cut](https://man7.org/linux/man-pages/man1/cut.1.html#DESCRIPTION)|Cut out fields from stdin or files|`cut OPTION... [FILE...]`|
+||Output fields 1 through 3 and 5 from each line of file with fields being separated by `:`|`cut -d: -f1-3,5 /path/to/file`|
 |[diff](https://linuxhandbook.com/diff-command/)|Analyze two files and print the lines that are different||
 |expand|Convert tabs to spaces||
 |head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
