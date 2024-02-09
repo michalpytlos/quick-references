@@ -2,16 +2,17 @@
 
 ## Contents
 
-1. [Searching](#searching)
+1. [Search](#search)
 1. [Text viewing and manipulation](#text-viewing-and-manipulation)
 1. [Processes](#processes)
 1. [Remote machines](#remote-machines)
 1. [Network utils](#network-utils)
 1. [Scripting](#scripting)
+1. [Understand](#understand)
 1. [Other commands A-Z](#Other-commands)
 1. [Useful links](#useful-links)
 
-## Searching
+## Search
 | command | description | usage |
 | ------- |------------ | ----- |
 |[grep](https://ss64.com/bash/grep.html)|Print lines matching a pattern|`grep [OPTIONS] 'PATTERN' [FILE...]`|
@@ -137,6 +138,14 @@ Useful links:
 |[getopts](https://www.howtogeek.com/778410/how-to-use-getopts-to-parse-linux-shell-script-options/)|Process command line args||
 |trap|Set up signal handling by script or shell|`trap COMMAND SIGNAL [SIGNAL...]`|
 
+## Understand
+| command | description | usage |
+| ------- |------------ | --------- |
+|[tldr](https://github.com/tldr-pages/tldr)|Display simple help pages for command-line tools||
+|whatis|Display one-line manual page descriptions||
+|whereis|Locate the binary, source, and manual page files for a command||
+|which|Locate the executable file associated with the given command||
+
 ## Other commands
 | command | description | usage |
 | ------- |------------ | --------- |
@@ -193,9 +202,6 @@ Useful links:
 |uname|Print system information||
 |[usermod](https://www.tecmint.com/usermod-command-examples/)|Modify user account||
 |[visudo](https://www.computerhope.com/unix/visudo.htm)|Edit sudoers file||
-|[whatis](https://www.computerhope.com/unix/whatis.htm)|Display one-line manual page descriptions||
-|whereis|Locate the binary, source, and manual page files for a command||
-|which|Locate the executable file associated with the given command||
 |[xargs](https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/)|Make commands accept standard input as arguments||
 |[xxd](https://opensource.com/article/19/8/dig-binary-files-hexdump)|Make hex dump of file or stdin displaying ASCII equivalent of each byte||
 
