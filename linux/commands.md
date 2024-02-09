@@ -7,6 +7,7 @@
 1. [Processes](#processes)
 1. [Remote machines](#remote-machines)
 1. [Network utils](#network-utils)
+1. [System resources](#system-resources)
 1. [Scripting](#scripting)
 1. [Understand](#understand)
 1. [Other commands A-Z](#Other-commands)
@@ -75,7 +76,7 @@ Useful links:
 ## Processes
 | command | description | usage |
 | ------- |------------ | --------- |
-|[htop](https://linuxtogether.org/htop-command-explanation/)|Process viewer||
+|[htop](https://www.man7.org/linux/man-pages/man1/htop.1.html)|Process viewer||
 |lsof|List open files||
 ||limit to process|`-p PID`|
 ||limit to user|`-u USER`|
@@ -132,6 +133,15 @@ Useful links:
 |[ss](https://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html)|Investigate sockets||
 |[wget](https://www.computerhope.com/unix/wget.htm)|Download files over network||
 
+## System resources
+| command | description | usage |
+| ------- |------------ | --------- |
+|[df](https://man7.org/linux/man-pages/man1/df.1.html#OPTIONS)|Report file system disk space usage||
+|[du](https://man7.org/linux/man-pages/man1/du.1.html#DESCRIPTION)|Estimate file space usage||
+|[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
+|[htop](https://www.man7.org/linux/man-pages/man1/htop.1.html)|Process viewer||
+|[lscpu](https://www.cyberciti.biz/faq/lscpu-command-find-out-cpu-architecture-information/)|Display information about the CPU architecture||
+
 ## Scripting
 | command | description | usage |
 | ------- |------------ | --------- |
@@ -155,19 +165,16 @@ Useful links:
 |[chmod](https://ss64.com/bash/chmod.html)|Change mode of access||
 |[chown](https://ss64.com/bash/chown.html)|Changes ownership of files and directories||
 |[crontab](https://linuxhandbook.com/crontab/)|Maintain crontab files for individual users||
-|[df](https://linuxhandbook.com/df-command/)|Report file system disk space usage||
 |[dpkg](https://man7.org/linux/man-pages/man1/dpkg-query.1.html)|Package manager in Debian||
 ||List packages|`-l, --list [PACKAGE-NAME-PATTERN...]`|
 ||Report status of packages|`-s, --status [PACKAGE...]`|
 ||Search for packages that own files corresponding to PATTERN|`-S, --search [FILENAME-PATTERN...]`|
-|[du](https://linuxhandbook.com/find-directory-size-du-command/)|Estimate file space usage||
 |[export](https://linuxhandbook.com/export-command/)|Create environment variable||
 |[fg](https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/)|Bring a background process to the foreground||
 |[file](https://www.computerhope.com/unix/ufile.htm)|Determine file type|`file [OPTIONS] FILE [FILE...]`|
 ||brief mode|`-b, --brief`|
 ||output mime type strings|`-i, --mime`|
 ||look inside compressed file|`-z, --uncompress`|
-|[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
@@ -176,7 +183,6 @@ Useful links:
 |[jobs](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/)|Show active jobs in shell||
 |[ln](https://www.computerhope.com/unix/uln.htm)|Make links between files||
 ||[Hard link vs soft link](https://linuxgazette.net/105/pitcher.html)||
-|[lscpu](https://www.cyberciti.biz/faq/lscpu-command-find-out-cpu-architecture-information/)|Display information about the CPU architecture||
 |[mc](https://tldp.org/LDP/LG/issue23/wkndmech_dec97/mc_article.html)|Directory browsing and file manipulation program||
 |[md5sum](https://www.geeksforgeeks.org/md5sum-linux-command/)|Verify data integrity using MD5||
 |[ntpd](https://www.systutorials.com/docs/linux/man/8-ntpd/)|Network Time Protocol (NTP) daemon||
