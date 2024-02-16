@@ -22,12 +22,15 @@
 | `%` | move to matching char. Default matchpairs: (), [], {} |
 | `gg` | go to first line of document |
 | `G` | go to last line of document |
-| `<N>G` | go to line N |
+| `<N>gg` | go to line N |
 | `:<N>` | go to line N (is not jump)|
 | `Ctrl + u` | move cursor and screen up 1/2 page |
 | `Ctrl + d` | move cursor and screen down 1/2 page |
-| `Ctrl + o` | jump older |
-| `Ctrl + i` | jump newer |
+| `ma`| set mark a at current position |
+| `'a` | jump to mark a |
+| `''` | jump back |
+| `` `. `` | jump to position where last change was made in current buffer |
+
 
 ### Inserting
 | Command | description |
@@ -65,8 +68,9 @@
 ### Other
 | Command | description |
 | ------- | ----------- |
+| * | search forward for word under cursor |
+| # | search backward for word under cursor |
 | >> | indent line |
-| >N> | indent N lines |
 | << | unindent line
 | u | undo last change |
 | U | undo last changed line |
@@ -107,9 +111,13 @@
 | `n` | next/repeat search in same direction |
 | `N` | repeat search in opposite direction |
 | `:reg` | view content of all registers |
-| `:ju[mps]` | view jump list |
+| `:ju[mps]` | list jumps |
+| `:marks` | list marks |
+| `:delmarks abxy` | delete marks a,b,x,y  |
+| `:delmarks! ` | delete all lowercase marks for current buffer |
 | `:ls` | list buffers |
-| `:b <buffer>` | switch to buffer |
+| `:bprev`| switch to previous buffer |
+| `:bnext`| switch to next buffer |
 | `:e <file>`| edit file |
 | `:!<command>` | execute shell command |
 
