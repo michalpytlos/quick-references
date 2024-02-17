@@ -118,34 +118,11 @@
 | `:ls` | list buffers |
 | `:bprev`| switch to previous buffer |
 | `:bnext`| switch to next buffer |
+| `:bd`| close buffer |
 | `:e <file>`| edit file |
 | `:!<command>` | execute shell command |
 
 ## Neovim setup
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
-1. Create config file: `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
-```vim
-" Plugins
-call plug#begin()
-
-Plug 'tpope/vim-commentary'
-Plug 'tomasiser/vim-code-dark'
-Plug 'folke/zen-mode.nvim'
-
-call plug#end()
-
-" Settings
-syntax enable
-colorscheme codedark
-set number
-set relativenumber
-
-" Key mappings
-nnoremap <C-_> :Commentary<CR>  " <C-_> is Ctrl + /
-vnoremap <C-_> :Commentary<CR>
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
-
-
-```
-3. Install plugins: `:PlugInstall`
+1. Create [config file](https://github.com/michalpytlos/dotfiles/blob/master/nvim/init.vim): `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
+1. Install plugins: `:PlugInstall`
