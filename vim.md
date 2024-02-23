@@ -139,6 +139,7 @@
 
 
 ## Neovim setup
+1. Install nvim from [snap](https://github.com/neovim/neovim-snap) or [AppImage](https://github.com/neovim/neovim/releases)
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
 1. Create [config file](https://github.com/michalpytlos/dotfiles/blob/master/nvim/init.vim): `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
 1. Install plugins: `:PlugInstall`
