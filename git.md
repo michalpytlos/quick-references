@@ -14,8 +14,6 @@
 ||Move branch head to commit|`git branch -f BRANCH COMMIT`|
 ||List branches whose tips are reachable from commit|`git branch --merged [COMMIT]`|
 |checkout|Switch branches or restore working tree files||
-||Get FILE from BRANCH|`git checkout BRANCH -- FILE`|
-||Discard unstaged changes to file|`git checkout -- FILE`|
 ||Create new branch AND check it out|`git checkout -b NEW_BRANCH`|
 |cherry-pick|Pick commits and append to HEAD|`git cherry-pick COMMIT [COMMIT...]`|
 |[commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)|Commit staged changes||
@@ -24,6 +22,7 @@
 |describe|Find most recent tag that is reachable from commit|`git describe [COMMIT...]`|
 |[diff](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)|Run diff on commits, branches, files and more||
 ||Show which files changed between commits (in diffstat form)|`git diff --stat COMMIT_1 COMMIT_2`|
+||Show changes between staging and last commit|`--cached`|
 |[log](https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history)|Show commit logs||
 ||Limit to committed after date. Date can be absolute ("2020-01-01") or relative ("2 hours ago").|`--after=<date>`|
 ||Limit to committed before date|`--before=<date>`|
@@ -41,10 +40,15 @@
 |[reflog](https://git-scm.com/docs/git-reflog)|Manage information recorded in reference logs||
 |[reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)|Move branch head backwards in time to older commit|`git reset OLDER_COMMIT`|
 |[restore](https://www.git-tower.com/learn/git/commands/git-restore)|Unstage or discard uncommitted local changes||
+||Restore unstaged file to version of current commit|`git restore FILE`|
+||Restore unstaged file to version of REF. REF can be commit hash, branch name, tag or stash ref.|`git restore --source=REF FILE`|
+||Unstage file|`git restore --staged FILE`|
 |revert|Invert changes introduced by commit and append new commit with resulting inverse content|`git revert BAD_COMMIT`|
 |[show](https://www.atlassian.com/git/tutorials/git-show)|View expanded details on git objects||
 ||List files affected by commit together with their status|`git show --pretty="" --name-status COMMIT`|
 |[stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)| Save local modifications away and revert working directory to match HEAD commit||
+||Stash individual files|`git stash push -m "msg" -- FILE FILE`|
+||Show files changed in stash|`git stash show --name-only STASH_REF`|
 ||Show changes recorded in stash entry in patch form|`git stash show -p STASH_REF`|
 |[submodule](https://git-scm.com/docs/git-submodule)|Manage submodules||
 ||Initialize, fetch and checkout all submodules for the repo|`git submodule update --init`|

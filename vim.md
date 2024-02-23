@@ -5,6 +5,7 @@
 1. [Visual mode](#visual-mode)
 1. [Insert mode](#insert-mode)
 1. [Command-line mode](#command-line-mode)
+1. [Windows](#windows)
 1. [Neovim setup](#neovim-setup)
 
 ## Normal mode
@@ -118,9 +119,24 @@
 | `:ls` | list buffers |
 | `:bprev`| switch to previous buffer |
 | `:bnext`| switch to next buffer |
-| `:bd`| close buffer |
+| `:bd`| Unload buffer and delete from buffer list. Close all windows for this buffer. |
+| `:bufdo bd` | unload all buffers |
+| `:e` | reload current file |
 | `:e <file>`| edit file |
 | `:!<command>` | execute shell command |
+| `%` | current file |
+| `:qa` | quit all windows and quit vim | 
+
+## Windows
+| Command | description |
+| ------- | ----------- |
+| `Ctrl + w (h\|j\|k\|l)` | move between windows |
+| `Ctrl + w c` | Close current window |
+| `Ctrl + w o` | Close other windows |
+| `:vs` | vertical split |
+| `:vs <file>` | open file in new vertical window |
+| `:sp` | horizontal split |
+
 
 ## Neovim setup
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
