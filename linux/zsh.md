@@ -38,7 +38,9 @@ Get a list of active key bindings: `bindkey`
 1. Set Zsh as the default shell: `chsh -s $(which zsh)`
 1. [Install oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 1. [Install powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
-1. Enable plugins in `.zshrc`: `plugins=(git kubectl docker docker-compose vi-mode aws z)`
+1. [Install zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+1. [Install zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-a-plugin-manager)
+1. Enable plugins in `.zshrc`: `plugins=(vi-mode z zsh-autosuggestions zsh-syntax-highlighting)`
 1. Restart Zsh: `exec zsh`
 
 ## Useful links
