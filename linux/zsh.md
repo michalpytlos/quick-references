@@ -40,8 +40,27 @@ Get a list of active key bindings: `bindkey`
 1. [Install powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 1. [Install zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 1. [Install zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-a-plugin-manager)
-1. Enable plugins in `.zshrc`: `plugins=(vi-mode z zsh-autosuggestions zsh-syntax-highlighting)`
-1. Restart Zsh: `exec zsh`
+1. Add custom configuration in `.zshrc` and restart Zsh: `exec zsh`
+```bash
+# Enable plugins
+plugins=(vi-mode z zsh-autosuggestions zsh-syntax-highlighting)
+
+# Snaps
+export PATH=$PATH:/snap/bin
+
+# Aliases
+alias g='git'
+alias t='tmux'
+
+# Syntax highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/highlighters/main/main-highlighter.zsh#L31
+# https://www.ditig.com/publications/256-colors-cheat-sheet
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=29,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=29,underline'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=29'
+```
 
 ## Useful links
 1. [Mastering Zsh - tutorial](https://github.com/rothgar/mastering-zsh)
