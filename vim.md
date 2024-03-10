@@ -6,6 +6,8 @@
 1. [Insert mode](#insert-mode)
 1. [Command-line mode](#command-line-mode)
 1. [Windows](#windows)
+1. [Marks](#marks)
+1. [Tags](#tags)
 1. [Neovim setup](#neovim-setup)
 
 ## Normal mode
@@ -27,11 +29,6 @@
 | `:<N>` | go to line N (is not jump)|
 | `Ctrl + u` | move cursor and screen up 1/2 page |
 | `Ctrl + d` | move cursor and screen down 1/2 page |
-| `ma`| set mark a at current position |
-| `'a` | jump to mark a |
-| `''` | jump back |
-| `` `. `` | jump to position where last change was made in current buffer |
-
 
 ### Inserting
 | Command | description |
@@ -77,6 +74,7 @@
 | U | undo last changed line |
 | Ctrl + r | redo changes which were undone |
 | . | repeat last command |
+| za | toggle fold under cursor |
 
 ## Visual mode
 | Command | description |
@@ -113,9 +111,6 @@
 | `N` | repeat search in opposite direction |
 | `:reg` | view content of all registers |
 | `:ju[mps]` | list jumps |
-| `:marks` | list marks |
-| `:delmarks abxy` | delete marks a,b,x,y  |
-| `:delmarks! ` | delete all lowercase marks for current buffer |
 | `:ls` | list buffers |
 | `:bprev`| switch to previous buffer |
 | `:bnext`| switch to next buffer |
@@ -133,10 +128,31 @@
 | `Ctrl + w (h\|j\|k\|l)` | move between windows |
 | `Ctrl + w c` | Close current window |
 | `Ctrl + w o` | Close other windows |
-| `:vs` | vertical split |
-| `:vs <file>` | open file in new vertical window |
-| `:sp` | horizontal split |
+| `Ctrl + w v` | Vertical split |
+| `Ctrl + w s` | Horizontal split |
 
+## Marks
+| Command | description |
+| ------- | ----------- |
+| `m<a-z>`| set buffer mark |
+| `m<A-Z>`| set file mark |
+| `'<mark>` | jump to mark |
+| `:marks` | list marks |
+| `:delm[arks] abxy` | delete marks a,b,x,y  |
+| `:delm[arks]! ` | delete all lowercase marks for current buffer |
+
+Uppercase marks are persistent and kept in the `main.shada` file.
+
+## Tags
+| Command | description |
+| ------- | ----------- |
+| `Ctrl + ]` | Jump to definition of keyword under cursor |
+| `Ctrl + o` | Jump back |
+
+To create tags file:
+1. Ensure [universal-ctags](https://github.com/universal-ctags/ctags) is installed
+1. Navigate to project root
+1. Create tags file: `ctags -R --languages=python`
 
 ## Neovim setup
 1. Install nvim from [snap](https://github.com/neovim/neovim-snap) or [AppImage](https://github.com/neovim/neovim/releases)
