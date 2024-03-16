@@ -8,7 +8,9 @@
 1. [Windows](#windows)
 1. [Marks](#marks)
 1. [Tags](#tags)
+1. [Macros](#macros)
 1. [Neovim setup](#neovim-setup)
+1. [Useful links](#useful-links)
 
 ## Normal mode
 
@@ -91,6 +93,8 @@
 ## Insert mode
 | Command | description |
 | ------- | ----------- |
+|Ctrl + n|Complete word|
+|Ctrl + p|Complete word - back/previous|
 | Ctrl + o | go to normal mode for just one command |
 | Ctrl + Right Arrow | move to beginning of next word |
 | Ctrl + Left Arrow | move to beginning of current/previous word |
@@ -101,26 +105,32 @@
 ## Command-line mode
 | Command | description |
 | ------- | ----------- |
-| `:%s/old/new/gc` | substitute with confirmations |
+| `:[range]g[lobal]/pattern/cmd`| Execute cmd on lines within range where pattern matches|
 | `:%s/old/new/g` | Substitute. Search for `old` and replace with `new`.|
+| `:%s/old/new/gc` | substitute with confirmations |
 | `:g/pattern/d` | delete all lines that match pattern|
 | `:v/pattenr/d` | delete all lines that do not match pattern|
 | `/pattern` | search forward (downwards) for pattern |
 | `?pattern` | search backward for pattern |
 | `n` | next/repeat search in same direction |
 | `N` | repeat search in opposite direction |
+|`:set <option>?`|Display current value of option|
 | `:reg` | view content of all registers |
 | `:ju[mps]` | list jumps |
 | `:ls` | list buffers |
+| `:b <substring indentifying buffer>`|switch to buffer|
 | `:bprev`| switch to previous buffer |
 | `:bnext`| switch to next buffer |
 | `:bd`| Unload buffer and delete from buffer list. Close all windows for this buffer. |
 | `:bufdo bd` | unload all buffers |
 | `:e` | reload current file |
 | `:e <file>`| edit file |
+| `:find <file>`|find file in path and then edit it|
 | `:!<command>` | execute shell command |
 | `%` | current file |
-| `:qa` | quit all windows and quit vim | 
+| `:qa` | quit all windows and quit vim |
+| `wshada` | [neovim] write current state of shared data to shada file |
+| `:so [<file>]` | execute commands from file |
 
 ## Windows
 | Command | description |
@@ -141,21 +151,35 @@
 | `:delm[arks] abxy` | delete marks a,b,x,y  |
 | `:delm[arks]! ` | delete all lowercase marks for current buffer |
 
-Uppercase marks are persistent and kept in the `main.shada` file.
+Uppercase marks are persistent and kept in the `main.shada` file. They are saved automatically on quiting vim.
 
 ## Tags
 | Command | description |
 | ------- | ----------- |
 | `Ctrl + ]` | Jump to definition of keyword under cursor |
-| `Ctrl + o` | Jump back |
+| `g Ctrl + ]` | Ambiguous tags. Display all tags for keyword under cursor and prompt for tag to jump to.|
+| `Ctrl + t` | Jump back in tag stack|
 
 To create tags file:
 1. Ensure [universal-ctags](https://github.com/universal-ctags/ctags) is installed
 1. Navigate to project root
 1. Create tags file: `ctags -R --languages=python`
 
+## Macros
+| Command | description |
+| ------- | ----------- |
+| `q<a-z>` | record typed characters into register |
+| `q` | stop recording |
+| `@<a-z>` | execute content of register |
+| `:g/pattern/norm! @a` | execute macro stored in register a on all lines matching pattern|
+| `:5,10norm! @a`| execute on lines 5 through 10|
+
 ## Neovim setup
 1. Install nvim from [snap](https://github.com/neovim/neovim-snap) or [AppImage](https://github.com/neovim/neovim/releases)
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
 1. Create [config file](https://github.com/michalpytlos/dotfiles/blob/master/nvim/init.vim): `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
 1. Install plugins: `:PlugInstall`
+
+## Useful links
+1. [Mastering the vim language - video](https://www.youtube.com/watch?v=wlR5gYd6um0)
+1. [How to do 90% of what plugins do - video](https://www.youtube.com/watch?v=XA2WjJbmmoM)
