@@ -19,6 +19,8 @@
 | ------- | ----------- |
 | `f<char>` | move to next occurrence of char |
 | `F<char>` | move to previous occurrence of char |
+| `t<char>` | move to before next occurrence of char |
+| `T<char>` | move to after previous occurrence of char |
 | `;` | repeat last `f`, `t`, `F`, `T` command forward |
 | `,` | repeat last `f`, `t`, `F`, `T` command backward |
 | `w` | move to beginning of next word |
@@ -177,7 +179,7 @@ To create tags file:
 ## Neovim setup
 1. Install nvim from [snap](https://github.com/neovim/neovim-snap) or [AppImage](https://github.com/neovim/neovim/releases)
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
-1. Create [config file](https://github.com/michalpytlos/dotfiles/blob/master/nvim/init.vim): `mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.vim`
+1. Copy [config files](https://github.com/michalpytlos/dotfiles/blob/master/nvim/) to `~/.config/nvim`
 1. Install plugins: `:PlugInstall`
 
 ## Useful links
