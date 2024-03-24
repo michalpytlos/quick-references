@@ -14,19 +14,41 @@
 
 ## Normal mode
 
-### Movement
+`<operator> [<count>] ( <motion> | <operator> )`
+
+### Operators
 | Command | description |
 | ------- | ----------- |
-| `f<char>` | move to next occurrence of char |
-| `F<char>` | move to previous occurrence of char |
-| `t<char>` | move to before next occurrence of char |
-| `T<char>` | move to after previous occurrence of char |
+|`c`|change|
+|`d`|delete|
+|`y`|yank into register|
+|`~`|switch case (if `tildeop` is set)|
+|`gu`|make lowercase|
+|`gU`|make uppercase|
+|`>`|shift right|
+|`<`|shift left|
+|`!<external command>`|filter through external command|
+|`zf`|define fold|
+
+
+### [Motions](https://neovim.io/doc/user/motion.html)
+#### Left-right motions
+| Command | description |
+| ------- | ----------- |
+|`0`|first char of line|
+|`^`|first non-black char of line|
+|`$`|end of line|
+| `%` | move to matching char. Default matchpairs: (), [], {} |
+| `f<char>` |next occurrence of char |
+| `F<char>` |previous occurrence of char |
+| `t<char>` |before next occurrence of char |
+| `T<char>` |after previous occurrence of char |
 | `;` | repeat last `f`, `t`, `F`, `T` command forward |
 | `,` | repeat last `f`, `t`, `F`, `T` command backward |
-| `w` | move to beginning of next word |
-| `e` | move to end of current/next word |
-| `b` | move to beginning of current/previous word |
-| `%` | move to matching char. Default matchpairs: (), [], {} |
+
+#### Up-down motions
+| Command | description |
+| ------- | ----------- |
 | `gg` | go to first line of document |
 | `G` | go to last line of document |
 | `<N>gg` | go to line N |
@@ -34,75 +56,97 @@
 | `Ctrl + u` | move cursor and screen up 1/2 page |
 | `Ctrl + d` | move cursor and screen down 1/2 page |
 
+#### Word motions
+| Command | description |
+| ------- | ----------- |
+| `w` |forward to beginning of word|
+| `e` |forward to end of word|
+| `b` |backward to beginning of word|
+|`ge`|backward to end of word|
+|`W \| E \| B \| gE`|same as lowercase motion but with [WORD](https://neovim.io/doc/user/motion.html#WORD)|
+
+#### Text object motions
+| Command | description |
+| ------- | ----------- |
+|`)`|sentence forward|
+|`(`|sentence backward|
+|`}`|paragraph forward|
+|`{`|paragraph backward|
+|`]]`|section/function forward|
+|`[[`|section/function backward|
+
+#### Text object selection
+| Command | description |
+| ------- | ----------- |
+|`iw`|inner word|
+|`iW`|inner WORD|
+|`is`|inner sentence|
+|`ip`|inner paragraph|
+|`i]`|inner [] block|
+|`i)`|inner () block|
+|`i>`|inner <> block|
+|`i}`|inner {} block|
+|`i"`|inner quoted string|
+|`i'`|inner quoted string|
+|`a ( w \| W \| s \| p )`| same as inner version but with leading or trailing chars|
+|`a ( ] \| ) \| > \| } \| " \| ' )`| same as inner version but with leading and trailing chars|
+
 ### Inserting
 | Command | description |
 | ------- | ----------- |
-| i | insert before cursor |
-| a | insert after cursor (append)|
-| I | insert at beginning of line |
-| A | insert at end of line (append)|
-| o | open new line below current line |
-| O | open new line above current line |
+|`i`| insert before cursor |
+|`a`| insert after cursor (append)|
+|`I`| insert at beginning of line |
+|`A`| insert at end of line (append)|
+|`o`| open new line below current line |
+|`O`| open new line above current line |
 
-### Modify and copy
+### Pasting
 | Command | description |
 | ------- | ----------- |
-| `d ( d \| w \| e \| b \| iw )` | delete/cut |
-| dd | cut current line |
-| d\<N>d | cut N lines|
-| dw | cut to beginning of next word (to right of cursor)|
-| de | cut to end of current word (to right of cursor)|
-| db | cut to beginning of current/previous word (to left of cursor)|
-| diw | cut entire word |
-| D | cut to end of line |
-| `c ( c \| w \| e \| b \| iw )` | change/replace |
-| C | change to end of line |
-| `y ( y \| w \| e \| b \| iw )` | yank/copy |
-| Y | yank to end of line |
-| x | cut char |
-| r | replace char |
-| p | paste after cursor |
-| P | paste before cursor |
-| "xp | paste content of register x |
-| "+p | paste content of system clipboard |
-| "+y | yank to system clipboard |
+|`p`| paste after cursor |
+|`P`| paste before cursor |
+|`"xp`| paste content of register x |
 
 ### Other
 | Command | description |
 | ------- | ----------- |
-| * | search forward for word under cursor |
-| # | search backward for word under cursor |
-| >> | indent line |
-| << | unindent line
-| u | undo last change |
-| U | undo last changed line |
-| Ctrl + r | redo changes which were undone |
-| . | repeat last command |
-| za | toggle fold under cursor |
+|`*`| search forward for word under cursor |
+|`#`| search backward for word under cursor |
+|`u`| undo last change |
+|`U`| undo last changed line |
+|`Ctrl + r`| redo changes which were undone |
+|`.`| repeat last command |
+|`za`| toggle fold under cursor |
+|`zz`| center screen on current line |
+|`x`| cut char |
+|`r`| replace char |
+|`~`|switch case of char|
+|`D`| cut to end of line |
+|`C`| change to end of line |
+|`Y`| yank to end of line |
 
 ## Visual mode
+`<visual selection> <operator>`
 | Command | description |
 | ------- | ----------- |
-| d | cut |
-| c | change |
-| y | yank |
-| > | indent |
-| < | unindent |
-| u | make lowercase |
-| U | make uppercase |
-| aw | mark word |
+| `o` | go to other end of selected text |
+| `~ \| d \| c \| y \| > \| < \| !` | same as [here](#operators) |
+|`u`| make lowercase |
+|`U`| make uppercase |
+| `<text object selection>` | same as [here](#text-object-selection) |
 
 ## Insert mode
 | Command | description |
 | ------- | ----------- |
-|Ctrl + n|Complete word|
-|Ctrl + p|Complete word - back/previous|
-| Ctrl + o | go to normal mode for just one command |
-| Ctrl + Right Arrow | move to beginning of next word |
-| Ctrl + Left Arrow | move to beginning of current/previous word |
-| Ctrl + w | delete to beginning of current/previous word (to left of cursor) |
-| Ctrl + u | delete everything to left of cursor |
-| Ctrl + o D | delete everything to right of cursor |
+|`Ctrl + n`|Complete word|
+|`Ctrl + p`|Complete word - back/previous|
+| `Ctrl + o` | go to normal mode for just one command |
+| `Ctrl + Right Arrow` | move to beginning of next word |
+| `Ctrl + Left Arrow` | move to beginning of current/previous word |
+| `Ctrl + w` | delete to beginning of current/previous word (to left of cursor) |
+| `Ctrl + u` | delete everything to left of cursor |
+| `Ctrl + o D` | delete everything to right of cursor |
 
 ## Command-line mode
 | Command | description |
@@ -133,6 +177,8 @@
 | `:qa` | quit all windows and quit vim |
 | `wshada` | [neovim] write current state of shared data to shada file |
 | `:so [<file>]` | execute commands from file |
+| `:noh` | stop highlighting for hlsearch |
+| `:set list` | show non-printing chars defined in listchars |
 
 ## Windows
 | Command | description |
