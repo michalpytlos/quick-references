@@ -162,7 +162,6 @@
 | `N` | repeat search in opposite direction |
 |`:set <option>?`|Display current value of option|
 | `:reg` | view content of all registers |
-| `:ju[mps]` | list jumps |
 | `:ls` | list buffers |
 | `:b <substring indentifying buffer>`|switch to buffer|
 | `:bprev`| switch to previous buffer |
@@ -175,10 +174,13 @@
 | `:!<command>` | execute shell command |
 | `%` | current file |
 | `:qa` | quit all windows and quit vim |
-| `wshada` | [neovim] write current state of shared data to shada file |
+| `:wshada` | [neovim] write current state of shared data to shada file |
 | `:so [<file>]` | execute commands from file |
 | `:noh` | stop highlighting for hlsearch |
 | `:set list` | show non-printing chars defined in listchars |
+| `:w !<command>`|Execute command with highlighted text as `stdin`|
+| `:r !command>`|Execute command and insert its `stdout` below cursor|
+
 
 ## Windows
 | Command | description |
@@ -223,9 +225,9 @@ To create tags file:
 | `:5,10norm! @a`| execute on lines 5 through 10|
 
 ## Neovim setup
-1. Install nvim from [snap](https://github.com/neovim/neovim-snap) or [AppImage](https://github.com/neovim/neovim/releases)
+1. [Install nvim](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu): `sudo apt install neovim`
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
-1. Copy [config files](https://github.com/michalpytlos/dotfiles/blob/master/nvim/) to `~/.config/nvim`
+1. Copy config files to `~/.config/nvim`
 1. Install plugins: `:PlugInstall`
 
 ## Useful links
