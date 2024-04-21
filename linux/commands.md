@@ -129,6 +129,7 @@ Useful links:
 ||Pass data to server in cookie header|`-b, --cookie (DATA \| FILE)`|
 ||Include HTTP response headers in output|`-i, --include`|
 ||Write output to file instead of stdout|`-o, --output FILE`|
+||Format JSON response with jq| `curl -s URL \| jq`|
 |[httpie](https://github.com/httpie/httpie)|Command-line http client||
 |[netcat](https://ss64.com/bash/nc.html)|Read from and write to network connections using TCP or UDP||
 ||Scan port range for listening deamons without sending any data|`nc -zv HOST START_PORT-STOP_PORT`|
