@@ -4,6 +4,7 @@
 - [CLI](#selected-commands)
 - [Version constraints](#version-constraints)
 - [Env with custom Python version](#env-with-custom-python-version)
+- [Private packages](#packages-from-private-package-sources)
 
 ## Selected commands
 
@@ -12,6 +13,7 @@
 |[add](https://python-poetry.org/docs/cli/#add)|Add new dependency to pyproject.toml|`poetry add [OPTIONS] PACKAGE[@VERSION_CONSTRAINT] [PACKAGE...]`|
 ||Add as dev dependency|`--dev`|
 ||Dry run|`--dry-run`|
+||Specify source to use to install package|`--source`|
 |check|Validate pyproject.toml|`poetry check`|
 |config|Edit config|`poetry config [OPTIONS] [KEY] [VALUE] [KEY...] [VALUE...]`|
 ||List config settings|`--list`|
@@ -39,6 +41,7 @@
 |[update](https://python-poetry.org/docs/cli/#update)|Get latest versions of dependencies and update lock file|`poetry update [OPTIONS] [PACKAGE] [PACKAGE...]`|
 ||Only update lock file|`--lock`|
 |[version](https://python-poetry.org/docs/master/cli/#version)|Show or bump version of project|`poetry version [ major \| minor \| patch ]`|
+|[source](https://python-poetry.org/docs/cli/#source)|Manage repository sources for Poetry project||
 
 Reference: [CLI docs](https://python-poetry.org/docs/cli/)
 
@@ -53,4 +56,11 @@ Reference: [CLI docs](https://python-poetry.org/docs/cli/)
 
 1. Set Python version in the current terminal session: `pyenv shell <version>`
 1. Create env: `pyenv which python | xargs poetry env use`
+
+## Packages from private package sources
+
+1. Configure package source: `poetry source add --priority=supplemental foo https://pypi.example.org/simple/`
+1. Add dependency to project: `poetry add --source foo private-package`
+
+Reference: [Repositories docs](https://python-poetry.org/docs/repositories/)
 
