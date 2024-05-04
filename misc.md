@@ -4,6 +4,7 @@
 * [Code review](#code-review)
 * [Diagrams](#diagrams)
 * [Kubernetes](#kubernetes)
+* [Github copilot](#github-copilot-in-vs-code)
 * [Effective speaking](#effective-speaking)
 * [Podcasts](#podcasts)
 
@@ -42,6 +43,13 @@ services:
 ## Kubernetes
 1. [kubectx](https://github.com/ahmetb/kubectx) - switch between contexts (clusters) on kubectl faster
 1. [kubens](https://github.com/ahmetb/kubectx) - switch between namespaces on kubectl faster
+
+## Github copilot in VS Code
+* `Ctrl+Alt+I` - open chat view
+* `Ctrl+Shift+I` - open quick chat
+* [Chat participants doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_chat-participants)
+* [Slash commands doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_slash-commands)
+* [Chat variables doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-chat-variables)
 
 ## Effective speaking
 1. [How to speak](https://www.youtube.com/watch?v=Unzc731iCUY) - Lecture by Patrick Winston
