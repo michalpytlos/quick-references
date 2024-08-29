@@ -5,6 +5,7 @@
 * [Diagrams](#diagrams)
 * [Kubernetes](#kubernetes)
 * [Github copilot](#github-copilot-in-vs-code)
+* [Github actions](#github-actions)
 * [Effective speaking](#effective-speaking)
 * [Podcasts](#podcasts)
 
@@ -51,6 +52,12 @@ services:
 * [Slash commands doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_slash-commands)
 * [Chat variables doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-chat-variables)
 
+## Github Actions
+* [Documentation](https://docs.github.com/en/actions)
+* [Workflow Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+* [Trigger events](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)
+* [Actions marketplace](https://github.com/marketplace?type=actions)
+
 ## Effective speaking
 1. [How to speak](https://www.youtube.com/watch?v=Unzc731iCUY) - Lecture by Patrick Winston
 
@@ -58,3 +65,4 @@ services:
 1. [Talk Python to Me](https://open.spotify.com/show/6Ol9sx1lONDxBSffLW9qcZ?si=e2a91948b9fb49bc&nd=1&dlsi=f14728e5d3084c30)
 1. [Linux and Open Source News](https://open.spotify.com/show/3AZjRagzOkDX55Ftk8meuZ)
 1. [Open Source Security Podcast](https://open.spotify.com/show/4YeKi2aGfxuhGj2QqazzVV)
+1. [2.5 Admins](https://open.spotify.com/show/5SnfOIrOCRtTbCaDifDgjO)
