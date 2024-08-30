@@ -56,7 +56,7 @@ alias t='tmux'
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/highlighters/main/main-highlighter.zsh#L31
 # https://www.ditig.com/publications/256-colors-cheat-sheet
 typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
+ZSH_HIGHLIGHT_STYLES[path]='none'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=29,underline'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=29,underline'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=29'
