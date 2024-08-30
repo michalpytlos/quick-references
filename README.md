@@ -8,9 +8,10 @@
     - [Important files and directories](linux/files_and_dirs.md)
     - [Zsh](linux/zsh.md)
 1. [Postgres](postgres.md)
-1. [Python](python/python.md)
+1. Python
     - [Alembic](python/alembic.md)
     - [Poetry](python/poetry.md)
+    - [Useful links](python/useful-links.md)
 1. [Tmux](tmux.md)
 1. [Vim](vim.md)
 1. [Web development](web-development.md)
