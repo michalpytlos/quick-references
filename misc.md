@@ -63,6 +63,5 @@ services:
 
 ## Podcasts
 1. [Talk Python to Me](https://open.spotify.com/show/6Ol9sx1lONDxBSffLW9qcZ?si=e2a91948b9fb49bc&nd=1&dlsi=f14728e5d3084c30)
-1. [Linux and Open Source News](https://open.spotify.com/show/3AZjRagzOkDX55Ftk8meuZ)
-1. [Open Source Security Podcast](https://open.spotify.com/show/4YeKi2aGfxuhGj2QqazzVV)
-1. [2.5 Admins](https://open.spotify.com/show/5SnfOIrOCRtTbCaDifDgjO)
+1. [Linux Dev Time](https://www.linuxdevtime.com/)
+1. [Hybrid Cloud Show](https://open.spotify.com/show/6Z9V7poHk7riyClcllls2z)
