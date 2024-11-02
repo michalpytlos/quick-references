@@ -60,6 +60,7 @@ Useful links:
 |[diff](https://linuxhandbook.com/diff-command/)|Analyze two files and print the lines that are different||
 |expand|Convert tabs to spaces||
 |head|print first 10 lines of each FILE to stdout|`head [OPTIONS] [FILE...]`|
+||print first `NUM` bytes|`-c, --bytes NUM`|
 |jq|JSON processor||
 |[less](https://www.howtogeek.com/444233/how-to-use-the-less-command-on-linux/)|View contents of a text file one screen at a time||
 |[rich-cli](https://github.com/Textualize/rich-cli)|syntax highlight text from file or command line||
@@ -72,7 +73,7 @@ Useful links:
 |tail|print last 10 lines of each FILE to stdout|`tail [OPTIONS] [FILE...]`|
 ||output appended data as the file grows|`-f, --follow`|
 ||print last `NUM` lines|`-n NUM`|
-||print lines starting with line `NUM`|`-n +NUM`|
+||print all lines from line `NUM`|`-n +NUM`|
 |[tr](https://www.geeksforgeeks.org/tr-command-in-unix-linux-with-examples/)|Translate or delete characters|`tr [OPTION] SET1 [SET2]`|
 ||Remove new lines and save to new file|`tr -d '\n' < in.txt > out.txt`|
 |[wc](https://www.tecmint.com/wc-command-examples/)|Newline, word, byte and characters counts in files||
@@ -157,6 +158,10 @@ Useful links:
 ## Understand
 | command | description | usage |
 | ------- |------------ | --------- |
+|[file](https://www.computerhope.com/unix/ufile.htm)|Determine file type|`file [OPTIONS] FILE [FILE...]`|
+||brief mode|`-b, --brief`|
+||output mime type strings|`-i, --mime`|
+||look inside compressed file|`-z, --uncompress`|
 |[tldr](https://github.com/tldr-pages/tldr)|Display simple help pages for command-line tools||
 |whatis|Display one-line manual page descriptions||
 |whereis|Locate the binary, source, and manual page files for a command||
@@ -177,10 +182,6 @@ Useful links:
 ||Search for packages that own files corresponding to PATTERN|`-S, --search [FILENAME-PATTERN...]`|
 |[export](https://linuxhandbook.com/export-command/)|Create environment variable||
 |[fg](https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/)|Bring a background process to the foreground||
-|[file](https://www.computerhope.com/unix/ufile.htm)|Determine file type|`file [OPTIONS] FILE [FILE...]`|
-||brief mode|`-b, --brief`|
-||output mime type strings|`-i, --mime`|
-||look inside compressed file|`-z, --uncompress`|
 |[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
@@ -218,6 +219,7 @@ Useful links:
 |[xxd](https://opensource.com/article/19/8/dig-binary-files-hexdump)|Make hex dump of file or stdin displaying ASCII equivalent of each byte||
 
 ## Useful links
+1. [Arch Linux - wiki](https://wiki.archlinux.org/title/General_recommendations)
 1. [Index of Linux commands by SS64](https://ss64.com/bash/)
 1. [Explain Shell](https://explainshell.com/) - quickly lookup syntax and details of shell commands
 1. [Linux utilities - index (The Open Group)](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/)

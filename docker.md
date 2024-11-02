@@ -52,6 +52,7 @@
 || show logs before timestamp (42 minutes ago) |`--until 42m`|
 | [port](https://docs.docker.com/engine/reference/commandline/port/) | list port mappings for container |`docker port CONTAINER`|
 | [ps](https://docs.docker.com/engine/reference/commandline/ps/) | list containers | `docker ps [OPTIONS]` |
+||show only container names|`--format '{{.Names}}'`|
 | [stats](https://docs.docker.com/engine/reference/commandline/stats/) | display live stream of container resource usage stats |`docker stats [OPTIONS] [CONTAINER...]`|
 | [top](https://docs.docker.com/engine/reference/commandline/top/) | display running processes of container |`docker top CONTAINER [ps OPTIONS]`|
 
