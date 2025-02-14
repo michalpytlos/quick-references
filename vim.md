@@ -225,7 +225,8 @@ To create tags file:
 | `:5,10norm! @a`| execute on lines 5 through 10|
 
 ## Neovim setup
-1. [Install nvim](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu): `sudo apt install neovim`
+1. [Optional] Install chosen [Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaMono#option-1-download-already-patched-font)
+1. [Install nvim](https://github.com/neovim/neovim/blob/master/INSTALL.md#snap): `sudo snap install nvim --classic`
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
 1. Copy config files to `~/.config/nvim`
 1. Install plugins: `:PlugInstall`
