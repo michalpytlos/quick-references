@@ -230,6 +230,16 @@ To create tags file:
 1. Install [vim-plug](https://github.com/junegunn/vim-plug#installation)
 1. Copy config files to `~/.config/nvim`
 1. Install plugins: `:PlugInstall`
+1. [Python projects] Correct venv for Python language server:
+    * Create the below `.envrc` file in the project directory
+    * Authorize the file: `direnv allow .`
+```bash
+# .envrc
+
+export VIRTUAL_ENV=$(poetry env info --path)
+export PATH="$VIRTUAL_ENV/bin:$PATH"
+
+```  
 
 ## Useful links
 1. [Mastering the vim language - video](https://www.youtube.com/watch?v=wlR5gYd6um0)
