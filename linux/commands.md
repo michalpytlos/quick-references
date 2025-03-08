@@ -112,6 +112,7 @@ Useful links:
 ||Copy to remote server|`scp /path/to/local/file user@remote_server:/destination/path`|
 ||Recursive copy|`-r`|
 |[ssh](https://www.ssh.com/ssh/command/)|SSH client||
+||SSH config file: [reference](https://www.ssh.com/academy/ssh/config), [how to](https://www.howtogeek.com/devops/how-to-manage-an-ssh-config-file-in-windows-linux/)|`~/.ssh/config`|
 ||Execute command on remote server|`ssh remote_server 'command'`|
 ||[SSH tunneling](https://www.ssh.com/academy/ssh/tunneling/example#local-forwarding). Forward local port to port on target server through jump server|`ssh -L localhost:LOCAL_PORT:TARGET_HOST:TARGET_PORT JUMP_SERVER`|
 ||Forward local port to port on remote server|`ssh -L localhost:LOCAL_PORT:localhost:REMOTE_PORT USER@REMOTE_SERVER`|

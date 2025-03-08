@@ -51,7 +51,7 @@ Get a list of active key bindings: `bindkey`
 # .zshrc changes
 
 # Enable plugins
-plugins=(vi-mode z zsh-autosuggestions zsh-syntax-highlighting direnv)
+plugins=(vi-mode z zsh-autosuggestions zsh-syntax-highlighting direnv ssh)
 
 # Snaps
 export PATH=$PATH:/snap/bin
