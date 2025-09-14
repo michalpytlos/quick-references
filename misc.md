@@ -48,9 +48,8 @@ services:
 ## Github copilot in VS Code
 * `Ctrl+Alt+I` - open chat view
 * `Ctrl+Shift+I` - open quick chat
-* [Chat participants doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_chat-participants)
-* [Slash commands doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_slash-commands)
-* [Chat variables doc](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-chat-variables)
+* [Cheat sheet](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode)
+* [VS Code docs](https://code.visualstudio.com/docs/copilot/copilot-chat)
 
 ## Github Actions
 * [Documentation](https://docs.github.com/en/actions)

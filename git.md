@@ -52,6 +52,9 @@
 ||Show changes recorded in stash entry in patch form|`git stash show -p STASH_REF`|
 |[submodule](https://git-scm.com/docs/git-submodule)|Manage submodules||
 ||Initialize, fetch and checkout all submodules for the repo|`git submodule update --init`|
+||Add submodule to project|`git submodule add REPO_ADDRESS PATH`|
+||Set tracking branch for submodule|`git submodule set-branch -b BRANCH PATH`|
+||Update the submodule to the latest commit of the tracked branch (fetch + checkout)|`git submodule update --remote PATH`|
 |tag|Add tag to commit|`git tag TAG_NAME COMMIT`|
 
 ## Config

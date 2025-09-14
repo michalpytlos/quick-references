@@ -68,6 +68,9 @@ ZSH_HIGHLIGHT_STYLES[path]='none'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=29,underline'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=29,underline'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=29'
+
+# Disable direnv logging
+export DIRENV_LOG_FORMAT=
 ```
 
 ## Useful links

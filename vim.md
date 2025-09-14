@@ -126,6 +126,15 @@
 |`C`| change to end of line |
 |`Y`| yank to end of line |
 
+### vim-surround
+| Command | description |
+| ------- | ----------- |
+| `cs<old><new>`|change surround|
+| `ds<char>`|delete surround|
+| `ysiw<char>`|surround word|
+| `yss<char>`|surround line|
+
+
 ## Visual mode
 `<visual selection> <operator>`
 | Command | description |
@@ -238,7 +247,7 @@ To create tags file:
 
 export VIRTUAL_ENV=$(poetry env info --path)
 export PATH="$VIRTUAL_ENV/bin:$PATH"
-
+# dotenv .env.local
 ```  
 
 ## Useful links
