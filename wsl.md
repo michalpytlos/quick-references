@@ -9,6 +9,8 @@
 | `wsl -l -o`|List distros that can be installed|
 | `wsl -d <distro>`|Run distro|
 | `wsl -t <distro>`|Terminate/stop distro|
+| `wsl --export <distro> <filename>`|Export distribution to tar file|
+| `wsl --import <distro> <install_location> <filename>`|Import tar file as new distribution. `install_location` is Windows path where distro's filesystem will be stored.|
 | `wsl --update`| Update WSL. See [release page](https://github.com/microsoft/WSL/releases) for changelog.|
 
 ## Configuration
