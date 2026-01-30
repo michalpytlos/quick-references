@@ -6,6 +6,7 @@
     - [Containers](#containers)
     - [Images](#images)
     - [Volumes](#volumes)
+    - [Build cache](#build-cache)
 - [Compose CLI](#compose-cli)
 - [Useful links](#useful-links)
 
@@ -78,6 +79,9 @@ Other commands: `inspect | ls | prune | rm | save | load`
 
 ## Volumes
 `docker volume ( create | inspect | ls | prune | rm )`
+
+## Build cache
+Remove build cache: `docker builder prune`
 
 # Compose CLI
 

@@ -8,6 +8,8 @@
 ## Commands
 | Command | description | usage |
 | ------------| ----------- | --------- |
+|[add](https://github.com/git-guides/git-add)|Add files to staging area||
+||Interactively stage parts of file|`git add -p FILE`|
 |[blame](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame)|Show what revision and author last modified each line of file|`git blame FILE`|
 ||Show what revision and author last modified lines n to m of file|`git blame -L n,m FILE`|
 |[branch](https://www.atlassian.com/git/tutorials/using-branches)|List, create or delete branches||

@@ -10,7 +10,8 @@
 1. [System resources](#system-resources)
 1. [Scripting](#scripting)
 1. [Understand](#understand)
-1. [Other commands A-Z](#Other-commands)
+1. [Encryption](#encryption)
+1. [Other commands A-Z](#other-commands)
 1. [Useful links](#useful-links)
 
 ## Search
@@ -168,6 +169,15 @@ Useful links:
 |whereis|Locate the binary, source, and manual page files for a command||
 |which|Locate the executable file associated with the given command||
 
+## Encryption
+| command | description | usage |
+| ------- |------------ | --------- |
+|[gpg](https://itsfoss.com/gpg-encrypt-files-basic/)|Encryption and signing tool|[gpg manual](https://www.gnupg.org/gph/en/manual.html)|
+|[openssl enc](https://docs.openssl.org/master/man1/openssl-enc/)|Symmetric encryption and decryption||
+||Encrypt file using PBKDF2 key derivation|`openssl enc -aes128 -pbkdf2 -in file.txt -out file.aes128`|
+||Decrypt file|`openssl enc -aes128 -pbkdf2 -d -in file.aes128 -out file.txt`|
+|[qpdf](https://qpdf.readthedocs.io/en/latest/cli.html)|Encrypt PDF file|`qpdf --encrypt user_pass owner_pass 256 -- in.pdf encrypted_out.pdf`|
+
 ## Other commands
 | command | description | usage |
 | ------- |------------ | --------- |
@@ -183,7 +193,6 @@ Useful links:
 ||Search for packages that own files corresponding to PATTERN|`-S, --search [FILENAME-PATTERN...]`|
 |[export](https://linuxhandbook.com/export-command/)|Create environment variable||
 |[fg](https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/)|Bring a background process to the foreground||
-|[gpg](https://guides.library.illinois.edu/data_encryption/gpgcheatsheet)|Encryption and signing tool||
 |hostnamectl|Control system hostname||
 |[id](https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/)|Print real and effective IDs of users and groups||
 |[img2pdf](https://pypi.org/project/img2pdf/)|Convert raster images to PDF||

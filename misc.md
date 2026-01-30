@@ -14,6 +14,7 @@
 1. [Code Review Developer Guide by Google](https://google.github.io/eng-practices/review/)
 
 ## Diagrams
+1. [mermaid.js](https://mermaid.js.org/intro/) - diagrams as code
 1. [PlantUML reference](https://plantuml.com/) - diagrams as code
 1. [Hitchhiker’s Guide to PlantUML](https://crashedmind.github.io/PlantUMLHitchhikersGuide/) - advanced PlantUML diagrams
 1. [PlantUML color reference](https://plantuml-documentation.readthedocs.io/en/latest/formatting/color-names.html)
