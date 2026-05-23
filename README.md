@@ -11,7 +11,7 @@
 1. Python
     - [Alembic](python/alembic.md)
     - [Poetry](python/poetry.md)
-    - [Useful links](python/useful-links.md)
+    - [Misc](python/python-misc.md)
 1. [Tmux](tmux.md)
 1. [Vim](vim.md)
 1. [Web development](web-development.md)

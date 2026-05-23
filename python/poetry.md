@@ -20,7 +20,7 @@
 |[env](https://python-poetry.org/docs/managing-environments/)|Manage virtualenvs|`poetry env SUBCOMMAND`|
 ||Display info about current environment|`env info [--path]`|
 ||List all virtualenvs associated with current project|`env list [--full-path]`|
-||Remove virtualenv associated with project|`env remove PYTHON_EXECUTABLE`|
+||Remove virtualenv associated with project|`env remove VIRTUALENV_NAME`|
 ||Activate or create new virtualenv for current project|`env use PYTHON_EXECUTABLE`|
 |init|Create pyproject.toml file in current dir|`poetry init [OPTIONS]`|
 |[install](https://python-poetry.org/docs/cli/#install)|Download and install dependecies from lock file. If lock file is not present, use pyproject.toml.|`poetry install [OPTIONS]`|
@@ -40,7 +40,7 @@
 ||Show latest versions for packages that are outdated|`-o, --outdated`|
 |[update](https://python-poetry.org/docs/cli/#update)|Get latest versions of dependencies and update lock file|`poetry update [OPTIONS] [PACKAGE] [PACKAGE...]`|
 ||Only update lock file|`--lock`|
-|[version](https://python-poetry.org/docs/master/cli/#version)|Show or bump version of project|`poetry version [ major \| minor \| patch ]`|
+|[version](https://python-poetry.org/docs/cli/#version)|Show or bump version of project|`poetry version [ major \| minor \| patch \| prerelease ]`|
 |[source](https://python-poetry.org/docs/cli/#source)|Manage repository sources for Poetry project||
 
 Reference: [CLI docs](https://python-poetry.org/docs/cli/)
