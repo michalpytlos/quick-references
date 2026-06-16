@@ -8,6 +8,7 @@
     - [ANALYZE, EXPLAIN and VACUUM](#analyze-explain-and-vacuum)
     - [Inserting large amount of data](#inserting-large-amount-of-data)
     - [Queries with LIKE](#trigram-index-for-queries-with-like)
+    - [Cluster](#cluster-table-on-index)
 1. [Miscellaneous](#miscellaneous)
 
 ## System stats and info
@@ -50,6 +51,7 @@
 |[ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html)|collect statistics about the contents of tables in the database, and store the results in the pg_statistic system catalog|`ANALYZE [ VERBOSE ] [ table_and_columns [, ...] ]`|
 |[EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html)|show the execution plan of a statement|`EXPLAIN [ ( option [, ...] ) ] statement`|
 |[VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html)|garbage-collect and optionally analyze a database|`VACUUM [ ( option [, ...] ) ] [ table_and_columns [, ...] ]`|
+
 ### Inserting large amount of data
 1. [Disable AUTOCOMMIT when using multiple INSERTs](https://www.postgresql.org/docs/current/populate.html#DISABLE-AUTOCOMMIT)
 1. [Use COPY instead of series of INSERT commands](https://www.postgresql.org/docs/current/populate.html#POPULATE-COPY-FROM)
@@ -58,12 +60,19 @@
 1. [Increase maintenance_work_mem](https://www.postgresql.org/docs/current/populate.html#POPULATE-WORK-MEM)
 1. [Increase max_wal_size](https://www.postgresql.org/docs/current/populate.html#POPULATE-MAX-WAL-SIZE)
 1. [Run ANALYZE afterwards](https://www.postgresql.org/docs/current/populate.html#POPULATE-ANALYZE)
+
 ### Trigram index for queries with LIKE
 Create trigram index for queries with `LIKE`:
 1. Load the pg_trgm extension: `CREATE EXTENSION pg_trgm`
 1. Create index: `CREATE INDEX index_name ON table_name USING GIN (column_name gin_trgm_ops)`
 
 [pg_trgm](https://www.postgresql.org/docs/current/pgtrgm.html) provides operator classes for [GIN and GiST](https://www.postgresql.org/docs/current/textsearch-indexes.html) trigram indexes.
+
+### Cluster table on index
+* Physically reorders a table based on the index information
+* Improves query performance when retrieving a range of indexed values or a single indexed value that has multiple rows that match
+* usage: `CLUSTER table_name USING index_name`
+* [documentation](https://www.postgresql.org/docs/current/sql-cluster.html)
 
 ## Miscellaneous
 
