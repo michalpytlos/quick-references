@@ -216,7 +216,17 @@ Useful links:
 |[source](https://ss64.com/bash/source.html)|Execute content of file in current shell||
 |[stat](https://www.howtogeek.com/451022/how-to-use-the-stat-command-on-linux/)|Display detailed status of file or file system||
 |[systemctl](https://tecadmin.net/tutorial/linux/linux-systemctl-command/)|Control systemd||
-|[tar](https://linuxhandbook.com/basic-tar-commands/)|Archive and compress files||
+|tar|Archive and compress files||
+||Create a gzipped archive and write it to a file|`tar czf out_archive.tar.gz in_file1 in_dir1 ...`|
+||Extract a compressed archive file into the current directory|`tar xzf in_archive.tar.gz`|
+||Extract a compressed archive file into the target directory|`tar xzf in_archive.tar.gz -C path/to/directory`|
+||List the contents of the archive|`tar tf in_archive.tar`|
+||create a new archive|`-c`|
+||extract files from an archive|`-x`|
+||filter the archive through gzip|`-z`|
+||use archive file|`-f`|
+||change to the directory DIR|`-C, --directory=DIR`|
+||list the contents of the archive|`-t, --list`|
 |[taskset](https://www.howtoforge.com/linux-taskset-command/)|Set or retrieve CPU affinity||
 |[tee](https://www.geeksforgeeks.org/tee-command-linux-example/)|Read from stdin and write to both stdout and one or more files||
 |[tmux](https://tmuxcheatsheet.com/)|Terminal multiplexer||
