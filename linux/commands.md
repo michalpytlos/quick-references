@@ -146,7 +146,15 @@ Useful links:
 | command | description | usage |
 | ------- |------------ | --------- |
 |[df](https://man7.org/linux/man-pages/man1/df.1.html#OPTIONS)|Report file system disk space usage||
-|[du](https://man7.org/linux/man-pages/man1/du.1.html#DESCRIPTION)|Estimate file space usage||
+|du|Estimate file space usage||
+||List the sizes of directories|`du -sh dir1 dir2 ...`|
+||List the sizes of a directory and all files and directories within it above threshold|`du -ah -t 1M\|1024K path/to/dir`|
+||List the sizes of a directory and any subdirectories up to N level deep |`du -h -d 2 path/to/dir`|
+||display only a total|`-s, --summarize`|
+||show sizes for all files, not just directories|`-a, --all`|
+||show sizes up to N level deep|`-d, --max-depth=N`|
+||exclude entries smaller than SIZE|`-t, --threshold=SIZE`|
+||human readable format|`-h`|
 |[free](https://www.howtogeek.com/456943/how-to-use-the-free-command-on-linux/)|Display amount of free and used memory in the system||
 |[htop](https://www.man7.org/linux/man-pages/man1/htop.1.html)|Process viewer||
 |[lscpu](https://www.cyberciti.biz/faq/lscpu-command-find-out-cpu-architecture-information/)|Display information about the CPU architecture||
