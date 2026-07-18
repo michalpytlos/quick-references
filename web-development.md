@@ -1,10 +1,10 @@
 # Web development
 
 ## HTTP
-1. [HTTP methods](https://github.com/for-GET/know-your-http-well/blob/master/methods.md)
-1. [HTTP status codes](https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md)
-1. [HTTP status code decision diagram](https://github.com/for-GET/http-decision-diagram)
-1. [HTTP references by Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+1. [HTTP methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
+1. [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+1. [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers)
+1. [HTTP guides](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides)
 
 ## Security
 1. [OWASP Top 10 API Security Risks](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
