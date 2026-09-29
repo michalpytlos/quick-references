@@ -4,7 +4,6 @@
 Install and run Python apps in isolated virtual environments.
 
 * Install package with specified Python: `pipx install --python PYTHON PACKAGE_SPEC`
-* [examples](https://pipx.pypa.io/stable/reference/examples/)
 * [docs](https://pipx.pypa.io/stable/reference/)
 
 ## pyenv

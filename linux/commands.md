@@ -18,6 +18,7 @@
 | command | description | usage |
 | ------- |------------ | ----- |
 |[grep](https://ss64.com/bash/grep.html)|Print lines matching a pattern|`grep [OPTIONS] 'PATTERN' [FILE...]`|
+||Search recursively for `PATTERN` in the current directory|`grep -r 'PATTERN' .`|
 ||print only count of selected lines per file| `-c, --count` |
 ||| `-i, --ignore-case` |
 ||print only names of files with selected lines| `-l, --files-with-matches` |
